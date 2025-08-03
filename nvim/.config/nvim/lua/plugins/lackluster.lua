@@ -1,23 +1,9 @@
-local function brighten_hex(hex, amount)
-	hex = hex:gsub("#", "")
-	local r = tonumber("0x" .. hex:sub(1, 2))
-	local g = tonumber("0x" .. hex:sub(3, 4))
-	local b = tonumber("0x" .. hex:sub(5, 6))
-
-	r = math.min(255, r + amount)
-	g = math.min(255, g + amount)
-	b = math.min(255, b + amount)
-
-	return string.format("#%02x%02x%02x", r, g, b)
-end
-
 return {
 	"slugbyte/lackluster.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
 		local color = require("lackluster.color")
-		local x = nil
 		require("lackluster").setup({
 			disable_plugin = {},
 			tweak_background = {
@@ -26,17 +12,27 @@ return {
 				telescope = "none",
 			},
 			tweak_highlight = {
-				CurLineNr = { fg = color.gray9, bold = true },
 				Cursor = { reverse = true },
+				CursorLineNr = { fg = color.gray9, bold = true },
 				Delimiter = { fg = color.lack },
+				DiagnosticHint = { fg = color.green },
+				DiagnosticInfo = { fg = color.blue },
+				DiagnosticVirtualTextHint = { link = "DiagnosticHint" },
+				DiagnosticWarn = { fg = color.orange },
 				Normal = { fg = color.gray8 },
 				OilDir = { fg = color.blue },
+				TelescopeMatching = { fg = color.orange, bold = true, italic = false },
+				TelescopeSelection = { fg = color.gray8, bg = color.gray3 },
+				TelescopeSelectionCaret = { fg = color.orange, bold = true, italic = false },
 				["@boolean"] = { fg = color.lack },
 				["@character"] = { link = "@string" },
 				["@comment"] = { fg = color.gray5 },
 				["@constant.builtin"] = { fg = color.lack },
 				["@constructor"] = { link = "Delimiter" },
+				["@function.builtin"] = { fg = color.gray5 },
+				["@function.call"] = { fg = color.gray8 },
 				["@function.method"] = { fg = color.gray8 },
+				["@function.method.call"] = { fg = color.gray8 },
 				["@keyword"] = { fg = color.gray6, bold = true },
 				["@keyword.return"] = { link = "@keyword" },
 				["@lsp"] = { fg = color.gray8 },
@@ -46,6 +42,7 @@ return {
 				["@property"] = { fg = color.lack },
 				["@punctuation.bracket"] = { link = "Delimiter" },
 				["@string"] = { fg = color.blue },
+				["@string.regexp"] = { link = "@string" },
 				["@type"] = { fg = color.gray9 },
 				["@variable"] = { fg = color.gray7 },
 			},
