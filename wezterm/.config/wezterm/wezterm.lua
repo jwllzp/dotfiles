@@ -82,8 +82,8 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Medium"
-		bold_weight = "ExtraBold"
+		normal_weight = "DemiBold"
+		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
 end
@@ -144,8 +144,8 @@ config.font_rules = {
 	},
 }
 config.font_size = 21
-config.line_height = 1.05
-config.cell_width = 1.01
+config.line_height = 1.1
+config.cell_width = 1
 config.window_padding = {
 	left = "1cell",
 	right = "1cell",
