@@ -143,9 +143,9 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 24
-config.line_height = 1.0
-config.cell_width = 1.0
+config.font_size = 21
+config.line_height = 1.05
+config.cell_width = 1.01
 config.window_padding = {
 	left = "1cell",
 	right = "1cell",
