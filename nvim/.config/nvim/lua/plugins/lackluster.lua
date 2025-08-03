@@ -13,10 +13,11 @@ end
 
 return {
 	"slugbyte/lackluster.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		local color = require("lackluster.color")
+		local x = nil
 		require("lackluster").setup({
 			disable_plugin = {},
 			tweak_background = {
@@ -25,25 +26,28 @@ return {
 				telescope = "none",
 			},
 			tweak_highlight = {
+				CurLineNr = { fg = color.gray9, bold = true },
+				Cursor = { reverse = true },
+				Delimiter = { fg = color.lack },
+				Normal = { fg = color.gray8 },
 				OilDir = { fg = color.blue },
-				-- Normal = { bg = color.gray2, fg = color.luster },
-				-- NormalFloat = { bg = color.none },
-				VertSplit = { bg = color.gray2, fg = color.luster },
-				["@property.json"] = { fg = color.gray7 },
-				["@keyword"] = { fg = color.blue, bold = true },
-				["@keyword.exception"] = { fg = color.blue, bold = true },
-				["@keyword.return"] = { fg = color.blue, bold = true },
-				TelescopeMatching = { fg = color.orange, bold = true, italic = false },
-				-- TelescopeBorder = { bg = color.gray2 },
-				-- TelescopeNormal = { bg = color.gray2 },
-				-- TelescopeSelection = { bg = color.gray4 },
-				TelescopeResultsNormal = { bg = color.none },
-				-- SignColumn = { bg = color.gray2 },
-				GitSignsAdd = { bg = color.gray2, fg = color.green },
-				GitSignsChange = { bg = color.gray2, fg = color.yellow },
-				GitSignsDelete = { bg = color.gray2, fg = color.red },
-				DiagnosticWarn = { fg = color.yellow },
-				DiagnosticError = { fg = color.red },
+				["@boolean"] = { fg = color.lack },
+				["@character"] = { link = "@string" },
+				["@comment"] = { fg = color.gray5 },
+				["@constant.builtin"] = { fg = color.lack },
+				["@constructor"] = { link = "Delimiter" },
+				["@function.method"] = { fg = color.gray8 },
+				["@keyword"] = { fg = color.gray6, bold = true },
+				["@keyword.return"] = { link = "@keyword" },
+				["@lsp"] = { fg = color.gray8 },
+				["@number"] = { fg = color.blue },
+				["@number.float"] = { link = "@number" },
+				["@operator"] = { fg = color.gray6, bold = true },
+				["@property"] = { fg = color.lack },
+				["@punctuation.bracket"] = { link = "Delimiter" },
+				["@string"] = { fg = color.blue },
+				["@type"] = { fg = color.gray9 },
+				["@variable"] = { fg = color.gray7 },
 			},
 		})
 		vim.cmd.colorscheme("lackluster")
