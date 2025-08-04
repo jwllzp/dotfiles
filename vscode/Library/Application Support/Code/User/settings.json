@@ -92,9 +92,10 @@
       "~/.kube/mx-prod-cluster.yaml",
       "~/.kube/ke-prod-cluster.yaml",
       "~/.kube/rancher/ke-prod-cluster.yaml",
-      "~/.kube/ke-prod-cluster.yaml"
+      "~/.kube/ke-prod-cluster.yaml",
+      "/Users/jaimeparedes/.kube/config"
     ],
-    "vs-kubernetes.kubeconfig": "~/.kube/config",
+    "vs-kubernetes.kubeconfig": "/Users/jaimeparedes/.kube/config",
     "vscode-kubernetes.helm-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.minikube-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
     "vs-kubernetes.crd-code-completion": "disabled",
