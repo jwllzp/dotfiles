@@ -35,6 +35,7 @@ return {
 				["@function.method.call"] = { fg = color.gray8 },
 				["@keyword"] = { fg = color.gray6, bold = true },
 				["@keyword.return"] = { link = "@keyword" },
+				["@keyword.exception"] = { link = "@keyword" },
 				["@lsp"] = { fg = color.gray8 },
 				["@number"] = { fg = color.blue },
 				["@number.float"] = { link = "@number" },
