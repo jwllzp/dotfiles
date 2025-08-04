@@ -83,7 +83,7 @@ local function get_font_weights(appearance, sync_os)
 		end
 	else
 		normal_weight = "DemiBold"
-		bold_weight = "Bold"
+		bold_weight = "ExtraBold"
 	end
 	return normal_weight, bold_weight
 end
