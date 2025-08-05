@@ -18,15 +18,16 @@ return {
 				mini = true,
 			},
 			highlights = {
-				TelescopeMatching = { fg = c.pink, bold = true },
-				TelescopeBorder = { fg = c.grey },
-				FloatBorder = { fg = c.grey },
 				Cursor = { reverse = true },
 				CursorLineNr = { fg = "#ffffff" },
+				FloatBorder = { fg = c.grey },
 				Keyword = { fg = "#ffbd5e" },
-				["@keyword.type"] = { fg = "#ffbd5e", italic = false },
 				PreProc = { fg = c.pink },
+				TelescopeBorder = { fg = c.grey },
+				TelescopeMatching = { fg = c.pink, bold = true },
+				["@keyword.type"] = { fg = "#ffbd5e", italic = false },
 				["@spell"] = { fg = c.grey },
+				["@string.documentation.python"] = { fg = c.grey },
 			},
 		})
 
