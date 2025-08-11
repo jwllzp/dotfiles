@@ -5,7 +5,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				-- python = { "black" },
-				-- rust = { "rustfmt", lsp_format = "fallback" },
+				rust = { "rustfmt" },
 			},
 		})
 	end,

@@ -24,7 +24,7 @@ return {
 				FloatBorder = { fg = c.grey },
 				Keyword = { fg = c.orange },
 				PreProc = { fg = c.pink },
-				special = { fg = c.grey },
+				Special = { fg = c.grey },
 				TelescopeBorder = { fg = c.grey },
 				TelescopeMatching = { fg = c.pink, bold = true },
 				["@keyword.type"] = { fg = c.orange, italic = false },
