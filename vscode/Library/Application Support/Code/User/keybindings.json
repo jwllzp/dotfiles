@@ -6,9 +6,30 @@
     "args": {
       "commands": [
         "workbench.action.focusNextGroup",
-        "workbench.action.toggleMaximizeEditorGroup",
+        "workbench.action.maximizeEditorHideSidebar",
       ]
     }
+  },
+  {
+	  "key": "ctrl+b p",
+	  "command": "runCommands",
+	  "args": {
+		  "commands": [
+			  "workbench.action.focusPreviousGroup",
+			  "workbench.action.maximizeEditorHideSidebar",
+		  ]
+	  }
+  },
+  {
+	  "key": "ctrl+b t",
+	  "command": "runCommands",
+	  "args": {
+		  "commands": [
+			  "workbench.action.focusSecondEditorGroup",
+			  "workbench.action.createTerminalEditorSameGroup",
+			  "workbench.action.maximizeEditorHideSidebar",
+		  ]
+	  }
   },
   {
     "key": "escape",
@@ -17,8 +38,7 @@
     "args": {
       "commands": [
         "workbench.action.focusActiveEditorGroup",
-        "workbench.action.closeSidebar",
-        "workbench.action.closeAuxiliaryBar",
+        "workbench.action.maximizeEditorHideSidebar"
       ]
     }
   },
@@ -52,7 +72,7 @@
     "args": {
       "commands": [
         "explorer.openAndPassFocus",
-        "workbench.action.closeSidebar"
+        "workbench.action.maximizeEditorHideSidebar"
       ]
     }
   },
