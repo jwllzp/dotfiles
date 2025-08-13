@@ -167,7 +167,7 @@
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.preferredLightColorTheme": "ob-theme",
+  "workbench.preferredLightColorTheme": "Cursor dark midnight",
   "editor.bracketPairColorization.enabled": false,
   "window.autoDetectColorScheme": true,
   "github.copilot.chat.followUps": "never",
