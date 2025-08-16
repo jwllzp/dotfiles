@@ -31,7 +31,7 @@ return {
 			},
 			keymaps = {
 				["<C-p>"] = function()
-					oil.open_preview({ horizontal = true })
+					oil.open_preview({ vertical = true })
 				end,
 				["g."] = "actions.toggle_hidden",
 				["<C-v>"] = {
