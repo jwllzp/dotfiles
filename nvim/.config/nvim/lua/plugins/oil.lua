@@ -9,7 +9,6 @@ return {
 			view_options = {
 				natural_order = false,
 			},
-
 			float = {
 				-- Padding around the floating window
 				padding = 2,
@@ -31,7 +30,12 @@ return {
 			},
 			keymaps = {
 				["<C-p>"] = function()
-					oil.open_preview({ vertical = true })
+					oil.open_preview({ vertical = true }, function()
+						local total_columns = vim.o.columns
+						local current_window = vim.api.nvim_get_current_win()
+						local target_columns = math.floor(total_columns * 0.25)
+						vim.api.nvim_win_set_width(current_window, target_columns)
+					end)
 				end,
 				["g."] = "actions.toggle_hidden",
 				["<C-v>"] = {
