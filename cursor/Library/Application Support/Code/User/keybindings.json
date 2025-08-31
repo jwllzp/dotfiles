@@ -1,0 +1,72 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+e",
+        "command": "composerMode.background"
+    },
+    {
+        "key": "ctrl+b n",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusNextGroup",
+                "workbench.action.toggleMaximizeEditorGroup",
+            ]
+        }
+    },
+    {
+        "key": "ctrl+b p",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusPreviousGroup",
+                "workbench.action.toggleMaximizeEditorGroup",
+            ]
+        }
+    },
+    {
+        "key": "ctrl+b t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusSecondEditorGroup",
+                "workbench.action.createTerminalEditorSameGroup",
+                "workbench.action.toggleMaximizeEditorGroup",
+            ]
+        }
+    },
+    {
+        "key": "ctrl+b shift+t",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.createTerminalEditorSide",
+                "workbench.action.toggleMaximizeEditorGroup",
+            ]
+        }
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-extension.vim_ctrl+a",
+        "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-cursorLineStart",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.acceptCursorTabSuggestion",
+        "when": "cpp.shouldAcceptTab"
+    },
+    {
+        "key": "tab",
+        "command": "-editor.action.acceptCursorTabSuggestion",
+        "when": "cpp.shouldAcceptTab"
+    }
+]
