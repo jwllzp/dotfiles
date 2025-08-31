@@ -1,6 +1,5 @@
 {
     "window.commandCenter": true,
-    "workbench.colorTheme": "Cursor Dark Midnight",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
@@ -53,5 +52,6 @@
     "workbench.editor.showTabs": "none",
     "notebook.lineNumbers": "on",
     "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "Cursom Cursor dark midnight"
 }

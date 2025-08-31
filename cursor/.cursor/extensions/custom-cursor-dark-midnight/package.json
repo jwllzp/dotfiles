@@ -1,5 +1,5 @@
 {
-  "name": "cursor-dark-midnight",
+  "name": "custom-cursor-dark-midnight",
   "displayName": "cursor-dark-midnight",
   "description": "",
   "version": "0.0.1",
@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Cursor dark midnight",
+        "label": "Custom Cursor dark midnight",
         "uiTheme": "vs",
-        "path": "./themes/cursor-dark-midnight-color-theme.json"
+        "path": "./themes/custom-cursor-dark-midnight-color-theme.json"
       }
     ]
   }
