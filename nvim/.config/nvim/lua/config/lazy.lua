@@ -26,6 +26,6 @@ require("lazy").setup({
 	checker = { enabled = true, notify = false },
 	dev = {
 		path = "~/projects/nvim/",
-		fallback = false,
+		fallback = true,
 	},
 })
