@@ -68,5 +68,93 @@
         "key": "tab",
         "command": "-editor.action.acceptCursorTabSuggestion",
         "when": "cpp.shouldAcceptTab"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-deleteAllRight",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-quickInput.previous",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-extension.vim_ctrl+k",
+        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-quickInput.next",
+        "when": "inQuickInput && quickInputType == 'quickPick'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "up",
+        "command": "-notebook.focusPreviousEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-notebook.cell.chat.focusPreviousCell",
+        "when": "inlineChatFocused && notebookCellChatFocused"
+    },
+    {
+        "key": "up",
+        "command": "-notebook.focusPreviousEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-notebook.focusPreviousEditor",
+        "when": "accessibilityModeEnabled && notebookCellEditorFocused"
+    },
+    {
+        "key": "k",
+        "command": "-notebook.focusPreviousEditor",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused && vim.mode == 'Normal' && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "notebook.focusPreviousEditor"
+    },
+    {
+        "key": "down",
+        "command": "-notebook.focusNextEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+    },
+    {
+        "key": "down",
+        "command": "-notebook.focusNextEditor",
+        "when": "config.notebook.navigation.allowNavigateToSurroundingCells && notebookCursorNavigationMode && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellMarkdownEditMode && notebookCellType == 'markup'"
+    },
+    {
+        "key": "j",
+        "command": "-notebook.focusNextEditor",
+        "when": "editorTextFocus && inputFocus && notebookEditorFocused && vim.mode == 'Normal' && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-notebook.focusNextEditor",
+        "when": "accessibilityModeEnabled && notebookCellEditorFocused"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "-notebook.focusNextEditor",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "notebook.focusNextEditor"
     }
 ]

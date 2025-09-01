@@ -46,7 +46,7 @@
         "vscodevim.vim": 0
     },
     "editor.lineNumbers": "relative",
-    "editor.fontSize": 21,
+    "editor.fontSize": 18,
     "editor.cursorStyle": "block",
     "terminal.integrated.fontSize": 18,
     "workbench.editor.showTabs": "none",
@@ -54,4 +54,6 @@
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "workbench.colorTheme": "Custom Cursor dark midnight",
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.cursorBlinking": "solid",
 }
