@@ -13,4 +13,6 @@ wezterm/.config/wezterm/*.jpg
 wezterm/.config/wezterm/*.png
 wezterm/.config/wezterm/*.jpeg
 
+zellij/.config/zellij/*.bak*
+
 **/.DS_Store
