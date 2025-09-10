@@ -82,13 +82,13 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "DemiBold"
-		bold_weight = "ExtraBold"
+		normal_weight = "Medium"
+		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
 end
 
-local setup_background = function()
+local function setup_background()
 	local username = capture_command_output("whoami")
 	local wallpaper_path = "/Users/" .. username .. "/.config/wezterm/wallpaper.png"
 	local background = {}
