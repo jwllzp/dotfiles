@@ -10,8 +10,8 @@ layout {
 	}
 	tab name="nvim" {
 		pane {
-			command "nvim"
-			args "."
+			command "zsh"
+			args "-i" "-c" "nvim ."
 		}
 	}
 }
