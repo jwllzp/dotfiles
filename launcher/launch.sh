@@ -11,8 +11,10 @@ if [ -z "$git_path" ]; then
 fi
 
 cd $git_path
+session_name=$(basename "$git_path")
 
-zellij
+zellij attach -c $my_session
+
 
 # if [ -d .venv ]; then
 # 	VENV_DIR=".venv"
