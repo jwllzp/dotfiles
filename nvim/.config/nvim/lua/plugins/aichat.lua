@@ -3,8 +3,6 @@ return {
 	dev = true,
 	lazy = false,
 	config = function()
-		require("aichat").setup({
-			conversation = true,
-		})
+		require("aichat").setup({})
 	end,
 }
