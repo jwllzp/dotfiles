@@ -7,6 +7,11 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<leader>cp", function()
+	local path = vim.fn.expand("%:.")
+	vim.fn.setreg("+", path)
+	print("Copied " .. path .. " to clipboard")
+end, { desc = "Copy relative file path to clipboard" })
 
 vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 
