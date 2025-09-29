@@ -13,7 +13,7 @@ fi
 cd $git_path
 session_name=$(basename "$git_path")
 
-zellij attach -c $my_session
+zellij attach -c $session_name
 
 
 # if [ -d .venv ]; then
