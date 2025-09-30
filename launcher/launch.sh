@@ -1,5 +1,19 @@
 #!/bin/bash
 
+launch_tmux_session() {
+	if ! tmux has-session -t "$1" 2>/dev/null; then
+		tmux new-session -d -s $1
+		tmux rename-window -t $1:1 "terminal"
+		tmux new-window -t $1:2 -n "nvim"
+		tmux send-keys -t $1:2 "nvim ." C-m
+		tmux send-keys -t $1:1 "clear" C-m
+		tmux select-window -t $1:1
+		tmux select-pane -t 1
+	fi
+
+	tmux attach-session -t $1
+}
+
 # Find all directories that contain a .git subdirectory, then use fzf for selection
 PROJECTS_DIR=~/projects
 git_path=$(fd -H -I --type d --prune '\.git$' $PROJECTS_DIR | xargs -I {} dirname {} | fzf --preview 'tree -L 2 -C {}')
@@ -13,38 +27,12 @@ fi
 cd $git_path
 session_name=$(basename "$git_path")
 
-zellij attach -c $session_name
-
-
-# if [ -d .venv ]; then
-# 	VENV_DIR=".venv"
-# elif [ -d venv ]; then
-# 	VENV_DIR="venv"
-# else
-# 	VENV_DIR=
-# fi
-#
-# repo_name=$(basename "$git_path")
-# repo_name="${repo_name//./_}"
-#
-# if ! tmux has-session -t "$repo_name" 2>/dev/null; then
-# 	tmux new-session -d -s $repo_name
-#
-# 	tmux rename-window -t $repo_name:1 "terminal"
-# 	tmux new-window -t $repo_name:2 -n "nvim"
-#
-# 	if [ -n "$VENV_DIR" ]; then
-# 		tmux send-keys -t $repo_name:1 "source ${VENV_DIR}/bin/activate" C-m
-# 		tmux send-keys -t $repo_name:2 "source ${VENV_DIR}/bin/activate" C-m
-# 	fi
-#
-# 	tmux send-keys -t $repo_name:2 "nvim ." C-m
-#
-# 	tmux send-keys -t $repo_name:1 "clear" C-m
-#
-# 	tmux select-window -t $repo_name:1
-# 	tmux select-pane -t 1
-# fi
-#
-# tmux attach-session -t $repo_name
-#
+if [ $MULTIPLEXER == "zellij" ]; then
+	zellij attach -c $session_name
+elif [ $MULTIPLEXER == "tmux" ]; then
+	repo_name=$(basename "$git_path")
+	repo_name="${repo_name//./_}"
+	launch_tmux_session $repo_name
+else
+	echo "MULTIPLEXER env variable not set :("
+fi

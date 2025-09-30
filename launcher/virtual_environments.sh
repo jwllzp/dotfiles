@@ -1,3 +1,4 @@
+# launch python venv
 if [ -d .venv ]; then
 	VENV_DIR=".venv"
 elif [ -d venv ]; then
