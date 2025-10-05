@@ -62,6 +62,10 @@
       "commands": ["editor.action.goToReferences"]
     },
     {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
       "before": ["g", "D"],
       "commands": ["editor.action.revealDeclaration"]
     }
