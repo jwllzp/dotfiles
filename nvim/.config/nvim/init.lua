@@ -43,6 +43,7 @@ vim.diagnostic.config({ virtual_text = true })
 vim.opt.cursorline = true
 vim.opt.confirm = true
 vim.o.termguicolors = true
+vim.opt.fixendofline = false
 
 require("config.lazy")
 require("after").setup.autocmds()
