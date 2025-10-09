@@ -31,19 +31,15 @@
 		  ]
 	  }
   },
-  // {
-  //   "key": "escape",
-  //   "command": "runCommands",
-  //   "when": "!editorFocus && !terminalFocus",
-  //   "args": {
-  //     "commands": [
-  //       "workbench.action.focusActiveEditorGroup",
-  //       "workbench.action.maximizeEditorHideSidebar"
-  //     ]
-  //   }
-  // },
   {
-
+    "key": "escape",
+    "command": "runCommands",
+    "when": "!editorFocus && !terminalFocus",
+    "args": {
+      "commands": [
+        "workbench.action.maximizeEditorHideSidebar"
+      ]
+    }
   },
   {
     "key": "cmd+,",
@@ -101,7 +97,7 @@
   },
   {
     "key": "shift+cmd+l",
-    "command": "workbench.action.chat.openAsk"
+    "command": "workbench.action.chat.openask"
   },
   {
     "key": "shift+cmd+c",
@@ -716,5 +712,10 @@
   {
     "key": "cmd+i",
     "command": "inlineChat.start"
+  },
+  {
+    "key": "escape",
+    "command": "inlineChat.close",
+    "when": "inlineChatHasProvider && inlineChatVisible"
   }
 ]
