@@ -3,6 +3,11 @@ return {
 	config = function()
 		require("conform").setup({
 			formatters = {
+				black = {
+					command = "black",
+					args = { "--line-length", "120", "-" },
+					stdin = true,
+				},
 				rustfmt = {
 					command = "rustfmt",
 					args = { "--config-path", vim.fn.expand("~/.config/rustfmt/rustfmt.toml") },
@@ -10,7 +15,7 @@ return {
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
-				-- python = { "black" },
+				python = { "black" },
 				rust = { "rustfmt" },
 			},
 		})
