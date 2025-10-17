@@ -78,11 +78,11 @@ local function get_font_weights(appearance, sync_os)
 			normal_weight = "Medium"
 			bold_weight = "Bold"
 		else
-			normal_weight = "Medium"
+			normal_weight = "Regular"
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Medium"
+		normal_weight = "Regular"
 		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
