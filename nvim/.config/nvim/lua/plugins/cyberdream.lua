@@ -21,7 +21,7 @@ return {
 				Cursor = { reverse = true },
 				CursorLineNr = { fg = c.fg },
 				Delimiter = { fg = c.grey },
-				Boolean = { fg = c.cyan, bold = true },
+				Boolean = { fg = c.pink, bold = true },
 				Directory = { fg = c.pink },
 				FloatBorder = { fg = c.grey },
 				Keyword = { fg = c.orange, bold = true },
