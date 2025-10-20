@@ -747,5 +747,15 @@
     "key": "tab",
     "command": "-editor.action.inlineSuggest.commit",
     "when": "inInlineEditsPreviewEditor"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
   }
 ]

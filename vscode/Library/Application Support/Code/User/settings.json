@@ -203,4 +203,8 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true
+  },
 }
