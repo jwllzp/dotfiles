@@ -103,7 +103,7 @@
     "vscode-kubernetes.helm-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.minikube-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
     "vs-kubernetes.crd-code-completion": "disabled",
-    "vs-kubernetes.minikube-show-information-expiration": "2025-04-15T19:07:50.952Z"
+    "vs-kubernetes.minikube-show-information-expiration": "2025-11-08T22:50:08.083Z"
   },
   "terminal.integrated.fontSize": 21,
   "terminal.integrated.lineHeight": 1.2,
@@ -207,4 +207,5 @@
     "**/.bloop": true,
     "**/.metals": true
   },
+  "python.defaultInterpreterPath": "/Users/jaimeparedes/projects/Tala_Feature_Store/venv",
 }
