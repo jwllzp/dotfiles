@@ -19,7 +19,7 @@ return {
 		"#ad9368", -- yellow
 		"#778fd1", -- blue
 		"#cc93b8", -- magenta
-		"#629da3", -- cyan
+		"#8a88db", -- cyan
 		"#bbbac1", -- white
 	},
 	brights = {
