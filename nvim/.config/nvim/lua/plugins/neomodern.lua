@@ -34,6 +34,7 @@ return {
 			},
 			highlights = {
 				FloatBorder = { fg = "#555568", bg = "none" },
+				NormalFloat = { bg = "#111113", fg = "##bbbac1" },
 				TelescopeMatching = { fg = "#e67e80" },
 				TelescopeSelection = { bg = "#2a2a31" },
 				["@keyword.conditional"] = { fg = "#8a88db", fmt = "bold" },
