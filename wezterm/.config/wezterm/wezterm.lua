@@ -1,33 +1,4 @@
 local wezterm = require("wezterm")
-local palette = {
-	foreground = "#e0e2ea",
-	background = "#14161b",
-	cursor_bg = "#9b9ea4",
-	cursor_border = "#9b9ea4",
-	cursor_fg = "#e0e2ea",
-	selection_bg = "#4f5258",
-	selection_fg = "#e0e2ea",
-	ansi = {
-		"#07080d",
-		"#ffc0b9",
-		"#b3f6c0",
-		"#fce094",
-		"#a6dbff",
-		"#ffcaff",
-		"#8cf8f7",
-		"#eef1f8",
-	},
-	brights = {
-		"#4f5258",
-		"#ffc0b9",
-		"#b3f6c0",
-		"#fce094",
-		"#a6dbff",
-		"#ffcaff",
-		"#8cf8f7",
-		"#eef1f8",
-	},
-}
 
 local function capture_command_output(command)
 	local handle = io.popen(command)
@@ -54,20 +25,6 @@ local function get_appearance()
 		return wezterm.gui.get_appearance()
 	end
 	return "Dark"
-end
-
-local function scheme_for_appearance(appearance, sync_os)
-	local scheme
-	if sync_os then
-		if appearance:find("Dark") then
-			scheme = "Vesper"
-		else
-			scheme = "Vesper"
-		end
-	else
-		scheme = "Vesper"
-	end
-	return scheme
 end
 
 local function get_font_weights(appearance, sync_os)
@@ -152,9 +109,10 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+
 config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.colors = require("cyberdream")
+config.colors = require("neomodern")
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true

@@ -1,6 +1,6 @@
 return {
 	"cdmill/neomodern.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("neomodern").setup({
@@ -15,7 +15,7 @@ return {
 			show_eob = true,
 			term_colors = true,
 			toggle_variant_key = nil,
-			transparent = true,
+			transparent = false,
 			diagnostics = {
 				darker = true,
 				undercurl = true,
