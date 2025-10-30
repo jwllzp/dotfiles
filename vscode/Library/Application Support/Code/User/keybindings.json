@@ -757,5 +757,9 @@
     "key": "escape",
     "command": "workbench.action.closeQuickOpen",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "\\ c",
+    "command": "github.copilot.chat.attachSelection"
   }
 ]

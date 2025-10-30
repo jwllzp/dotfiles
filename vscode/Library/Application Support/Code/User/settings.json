@@ -186,8 +186,7 @@
   "git.blame.statusBarItem.enabled": true,
   "github.copilot.advanced": {},
   "docker.extension.enableComposeLanguageServer": false,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
   "githubPullRequests.pullBranch": "never",
   "[dockercompose]": {
     "editor.insertSpaces": true,
@@ -208,4 +207,8 @@
     "**/.metals": true
   },
   "python.defaultInterpreterPath": "/Users/jaimeparedes/projects/Tala_Feature_Store/venv",
+  "editor.inlineSuggest.edits.renderSideBySide": "never",
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+  "explorer.confirmDelete": false,
 }
