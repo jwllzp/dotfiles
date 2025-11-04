@@ -1,0 +1,38 @@
+k9s:
+  body:
+    bgColor: "#171719"
+  prompt:
+    bgColor: "#1d1d22"
+  info:
+    sectionColor: "#778fd1"
+  dialog:
+    bgColor: "#1d1d22"
+    labelFgColor: "#ad9368"
+    fieldFgColor: "#629da3"
+  frame:
+    crumbs:
+      bgColor: "#778fd1"
+    title:
+      bgColor: "#1d1d22"
+      counterColor: "#cfa18c"
+    menu:
+      fgColor: "#bbbac1"
+  views:
+    charts:
+      bgColor: "#171719"
+    table:
+      bgColor: "#171719"
+      header:
+        fgColor: "#778fd1"
+        bgColor: "#1d1d22"
+    xray:
+      bgColor: "#171719"
+    logs:
+      bgColor: "#171719"
+      indicator:
+        bgColor: "#1d1d22"
+        toggleOnColor: "#658c6d"
+        toggleOffColor: "#e67e80"
+    yaml:
+      colonColor: "#9b99a3"
+      valueColor: "#bbbac1"
