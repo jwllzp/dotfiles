@@ -110,7 +110,7 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.background = setup_background()
+-- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
 config.colors = require("cyberdream")
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
