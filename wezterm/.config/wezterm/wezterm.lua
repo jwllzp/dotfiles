@@ -100,8 +100,8 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 28
-config.line_height = 1.1
+config.font_size = 21
+config.line_height = 1
 config.cell_width = 1
 config.window_padding = {
 	left = "1cell",
