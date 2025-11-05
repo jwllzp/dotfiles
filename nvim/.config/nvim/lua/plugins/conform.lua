@@ -10,7 +10,7 @@ return {
 				},
 				rustfmt = {
 					command = "rustfmt",
-					args = { "--config-path", vim.fn.expand("~/.config/rustfmt/rustfmt.toml") },
+					args = { "--config-path", vim.fn.expand("~/.config/rustfmt/"), "--edition", "2024" },
 				},
 			},
 			formatters_by_ft = {
