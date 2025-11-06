@@ -100,7 +100,7 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 21
+config.font_size = 24
 config.line_height = 1
 config.cell_width = 1
 config.window_padding = {
@@ -117,6 +117,7 @@ config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
+config.window_background_opacity = 0.95
 config.macos_window_background_blur = 0
 config.keys = {
 	{
