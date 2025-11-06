@@ -12,11 +12,7 @@ return {
 			borderless_pickers = false,
 			terminal_colors = true,
 			cache = true,
-			extensions = {
-				telescope = true,
-				notify = true,
-				mini = true,
-			},
+			extensions = {},
 			highlights = {
 				Cursor = { reverse = true },
 				CursorLineNr = { fg = c.fg },
@@ -32,6 +28,9 @@ return {
 				["@keyword.type"] = { fg = c.orange, italic = false, bold = true },
 				["@spell"] = { fg = c.grey },
 				["@string.documentation.python"] = { fg = c.grey },
+				RainbowDelimiter1 = { fg = c.orange },
+				RainbowDelimiter2 = { fg = c.pink },
+				RainbowDelimiter3 = { fg = c.grey },
 			},
 		})
 
