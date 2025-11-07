@@ -1,7 +1,7 @@
 return {
 	"jwllzp/nord.nvim",
 	dev = true,
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("nord").setup({
