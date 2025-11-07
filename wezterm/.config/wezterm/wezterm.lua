@@ -113,7 +113,8 @@ config.window_padding = {
 
 -- config.background = setup_background()
 -- config.color_scheme = scheme_for_appearance(appearance, sync_os)
-config.colors = require("cyberdream")
+config.color_scheme = "Vesper"
+-- config.colors = require("cyberdream")
 config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true

@@ -40,6 +40,8 @@ return {
 				RainbowDelimiter1 = { fg = "#d79921" },
 				RainbowDelimiter2 = { fg = "#b16286" },
 				RainbowDelimiter3 = { fg = "#458588" },
+				["@spell"] = { fg = colors.comment },
+				["@string.documentation.python"] = { fg = colors.comment },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
