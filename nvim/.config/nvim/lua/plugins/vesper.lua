@@ -1,6 +1,6 @@
 return {
 	"datsfilipe/vesper.nvim",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		local colors = require("vesper.colors")
@@ -37,6 +37,9 @@ return {
 				TelescopeMatching = { fg = colors.red, bold = true },
 				TelescopeSelection = { bg = colors.fgSelection },
 				VertSplit = { fg = colors.border, bg = "none" },
+				RainbowDelimiter1 = { fg = "#d79921" },
+				RainbowDelimiter2 = { fg = "#b16286" },
+				RainbowDelimiter3 = { fg = "#458588" },
 			},
 		})
 		vim.cmd.colorscheme("vesper")
