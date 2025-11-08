@@ -26,11 +26,13 @@ return {
 			overrides = {
 				Boolean = { fg = colors.redDark, bold = true },
 				Conditional = { fg = colors.borderDarker, bold = true },
+				["@constructor"] = { fg = colors.orange },
 				Cursor = { reverse = true },
 				CursorLineNr = { bg = "none", bold = true },
 				DiagnosticUnderlineError = {},
 				DiagnosticVirtualTextError = { fg = colors.hint },
 				FloatBorder = { fg = colors.border },
+				Number = { fg = colors.white, bold = false },
 				NormalFloat = { bg = "none" },
 				Statement = { fg = mix(colors.primary, "#000000", 0.60), bold = true },
 				Operator = { fg = colors.symbol },
