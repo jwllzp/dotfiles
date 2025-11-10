@@ -77,7 +77,6 @@ config.hide_tab_bar_if_only_one_tab = true
 
 local sync_os = false
 local font_family = "JetBrains Mono"
--- local font_family = "Courier"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
