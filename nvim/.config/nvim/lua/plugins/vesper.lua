@@ -43,6 +43,7 @@ return {
 				RainbowDelimiter1 = { fg = "#d79921" },
 				RainbowDelimiter2 = { fg = "#b16286" },
 				RainbowDelimiter3 = { fg = "#458588" },
+				Visual = { fg = "#000000", bg = "#ffffff" },
 				["@spell"] = { fg = colors.comment },
 				["@string.documentation.python"] = { fg = colors.comment },
 				["@variable.builtin"] = { fg = colors.red },
