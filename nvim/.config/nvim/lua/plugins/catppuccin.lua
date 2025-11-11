@@ -5,7 +5,11 @@ return {
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
-      compile_path = vim.fn.stdpath "cache" .. "/catppuccin",
+			compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
+			float = {
+				solid = false,
+				transparent = true,
+			},
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
 				light = "latte",
@@ -23,7 +27,7 @@ return {
 			no_bold = false, -- Force no bold
 			no_underline = false, -- Force no underline
 			styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-				comments = {  }, -- Change the style of comments
+				comments = {}, -- Change the style of comments
 				conditionals = { "bold" },
 				loops = { "bold" },
 				functions = {},
@@ -32,7 +36,7 @@ return {
 				variables = {},
 				numbers = {},
 				booleans = { "bold" },
-				properties = { },
+				properties = {},
 				types = {},
 				operators = {},
 				-- miscs = {}, -- Uncomment to turn off hard-coded styles
@@ -46,10 +50,10 @@ return {
 					DiagnosticVirtualTextInfo = { style = {} },
 					DiagnosticVirtualTextOk = { style = {} },
 					DiagnosticVirtualTextWarn = { style = {} },
-					LineNr = { fg=colors.surface2 },
+					LineNr = { fg = colors.surface2 },
 					TelescopeSelection = { fg = colors.text, bg = colors.surface2, style = {} },
-          TelescopeMatching = { fg = colors.peach, style = {}},
-          Visual = { style = {}},
+					TelescopeMatching = { fg = colors.peach, style = {} },
+					Visual = { style = {} },
 				}
 			end,
 			default_integrations = true,
@@ -67,5 +71,5 @@ return {
 			},
 		})
 		vim.cmd.colorscheme("catppuccin")
-	end
+	end,
 }
