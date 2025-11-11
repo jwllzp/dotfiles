@@ -36,6 +36,8 @@ return {
 			-- Custom Highlights --
 			colors = {}, -- Override default colors
 			highlights = {
+				NormalFloat = { bg = "none" },
+				FloatBorder = { bg = "none" },
 				Comment = { fg = c.grey },
 				["@spell"] = { fg = c.grey },
 				["@string.documentation"] = { fg = c.grey },
