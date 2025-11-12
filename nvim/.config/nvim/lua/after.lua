@@ -26,13 +26,6 @@ return {
 				end,
 			})
 
-			vim.api.nvim_create_autocmd("BufWritePre", {
-				pattern = "*",
-				callback = function(args)
-					require("conform").format({ bufnr = args.buf })
-				end,
-			})
-
 			vim.api.nvim_create_autocmd("BufWinEnter", {
 				callback = function()
 					if vim.wo.diff then
