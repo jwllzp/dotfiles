@@ -1,26 +1,7 @@
 return {
 	"neovim/nvim-lspconfig",
-	dependencies = {
-		{ "williamboman/mason.nvim", config = true },
-		"williamboman/mason-lspconfig.nvim",
-		{
-			"j-hui/fidget.nvim",
-			enabled = true,
-			opts = {
-				progress = {
-					suppress_on_insert = true,
-					display = {
-						render_limit = 1,
-					},
-				},
-				notification = {
-					window = {
-						winblend = 0,
-					},
-				},
-			},
-		},
-	},
+	dependencies = {},
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
@@ -63,54 +44,16 @@ return {
 		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 		local servers = {
-			pylsp = {
-				enabled = false,
-				filetypes = { "python" },
-				settings = {
-					pylsp = {
-						configuratinSources = { "pycodestyle", "pyflakes" },
-						plugins = {
-							pyflakes = {
-								enabled = false,
-							},
-							pycodestyle = {
-								enabled = true,
-								maxLineLength = 120,
-							},
-							jedi_completion = {
-								enabled = true,
-								include_function_objects = false,
-								include_class_objects = false,
-							},
-						},
-					},
-				},
-			},
 			pyright = {
 				enabled = true,
 				filetypes = { "python" },
-				settings = {},
-			},
-			rust_analyzer = {
-				enabled = true,
-				filetypes = { "rust" },
-				settings = {
-					["rust-analyzer"] = {
-						rustfmt = {
-							enabled = true,
-						},
-					},
+				setup = {
+					cmd = { "pyright-langserver", "--stdio" },
 				},
+				settings = {},
 			},
 		}
 
-		require("mason").setup({
-			registries = {
-				"github:mason-org/mason-registry",
-			},
-		})
-
-		local ensure_installed = vim.tbl_keys(servers or {})
 		local exclude = {}
 		for server, settings in pairs(servers) do
 			if not settings["enabled"] then
@@ -120,15 +63,13 @@ return {
 
 		for server, settings in pairs(servers) do
 			if settings["enabled"] then
-				vim.lsp.config(server, settings)
+				require("lspconfig")[server].setup({
+					capabilities = capabilities,
+					cmd = settings.setup and settings.setup.cmd,
+					filetypes = settings.filetypes,
+					settings = settings.settings,
+				})
 			end
 		end
-
-		require("mason-lspconfig").setup({
-			ensure_installed = ensure_installed,
-			automatic_enable = {
-				exclude = exclude,
-			},
-		})
 	end,
 }
