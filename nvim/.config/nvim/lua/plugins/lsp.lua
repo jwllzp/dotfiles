@@ -69,6 +69,7 @@ return {
           capabilities = capabilities,
           settings = settings.settings,
 				}
+        vim.lsp.start(vim.lsp.config[server])
 			end
 		end
 	end,
