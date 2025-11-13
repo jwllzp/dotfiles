@@ -63,14 +63,24 @@ return {
 
 		for server, settings in pairs(servers) do
 			if settings["enabled"] then
-        vim.lsp.config[server] = {
+        local config = {
+          name = server,
           cmd = settings.setup and settings.setup.cmd,
           filetypes = settings.filetypes,
           capabilities = capabilities,
           settings = settings.settings,
-				}
-        vim.lsp.start(vim.lsp.config[server])
-			end
+        }
+
+        vim.lsp.config[server] = config
+
+        vim.api.nvim_create_autocmd("FileType", {
+          group = vim.api.nvim_create_augroup("LspAutoStart_" .. server, { clear = true }),
+          pattern = config.filetypes,
+          callback = function()
+            vim.lsp.start(config)
+          end,
+        })
+      end
 		end
 	end,
 }
