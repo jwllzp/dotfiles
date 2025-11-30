@@ -111,12 +111,6 @@ return {
 		})
 
 		local ensure_installed = vim.tbl_keys(servers or {})
-		local exclude = {}
-		for server, settings in pairs(servers) do
-			if not settings["enabled"] then
-				table.insert(exclude, server)
-			end
-		end
 
 		for server, settings in pairs(servers) do
 			if settings["enabled"] then
@@ -124,11 +118,5 @@ return {
 			end
 		end
 
-		require("mason-lspconfig").setup({
-			ensure_installed = ensure_installed,
-			automatic_enable = {
-				exclude = exclude,
-			},
-		})
 	end,
 }
