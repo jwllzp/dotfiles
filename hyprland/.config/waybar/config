@@ -1,0 +1,20 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [],
+  "modules-right": [
+    "battery",
+	"clock#date",
+    "clock"
+  ],
+  "clock": {
+    "format": "{:%H:%M}"
+  },
+  "clock#date": {
+    "format": "{:%a %d}"
+  },
+  "battery": {
+    "format": "{}%",
+    "format-charging": "{}%+"
+  }
+}
