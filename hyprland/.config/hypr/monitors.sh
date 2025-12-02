@@ -9,5 +9,5 @@ LAP_ON=$(echo "$MONS" | grep -q "$LAPTOP" && echo 1 || echo 0)
 if [ "$LAP_ON" -eq 1 ]; then
 	hyprctl keyword monitor "eDP-1,disable"
 else
-	hyprctl keyword monitor "eDP-1, preferred, auto-down, 2"
+	hyprctl keyword monitor "eDP-1, 2880x1800@60, auto-down, 2"
 fi
