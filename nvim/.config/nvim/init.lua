@@ -7,11 +7,22 @@ vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<leader>yf", function()
+vim.keymap.set("n", "<leader>yff", function()
 	local path = vim.fn.expand("%:.")
 	vim.fn.setreg("+", path)
-	print("Copied " .. path .. " to clipboard")
+	print("Copied file path to clipboard")
 end, { desc = "Copy relative file path to clipboard" })
+
+vim.keymap.set("n", "<leader>yfu", function()
+	-- https://github.com/inventure/Tala_Feature_Store/blob/develop/feature_store/features/engine/engine.py
+	local current_line = vim.api.nvim_win_get_cursor(vim.api.nvim_get_current_win())[1]
+	local path = vim.fn.expand("%:.")
+	local github_base = vim.fn.system("git remote get-url origin")
+	local repo = string.sub(github_base, github_base:find(":") + 1, -6)
+	local url = "https://github.com/" .. repo .. "/blob/develop/" .. path .. "#L" .. current_line
+	vim.fn.setreg("+", url)
+	print("Copied github path to clipboard")
+end, { desc = "Copy github path of current file to github" })
 
 vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 
