@@ -39,7 +39,7 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Medium"
+		normal_weight = "Regular"
 		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
@@ -76,7 +76,7 @@ local config = wezterm.config_builder()
 config.hide_tab_bar_if_only_one_tab = true
 
 local sync_os = false
-local font_family = "JetBrains Mono"
+local font_family = "JetBrains Mono NL"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
@@ -101,21 +101,12 @@ config.font_rules = {
 	},
 }
 config.font_size = 21
-config.line_height = 1
-config.cell_width = 1
-config.window_padding = {
-	left = "1cell",
-	right = "1cell",
-	top = 0,
-	bottom = 0,
-}
 
 config.colors = require("cyberdream")
-config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
-config.window_background_opacity = 0.95
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 0
 config.keys = {
 	{
@@ -138,9 +129,21 @@ config.quick_select_patterns = {
 }
 config.quit_when_all_windows_are_closed = false
 
-wezterm.on("gui-startup", function(cmd)
-	local _, _, window = mux.spawn_window(cmd or {})
-	window:gui_window():maximize()
-end)
+if wezterm.target_triple:find("%apple%") then
+  config.line_height = 1
+  config.cell_width = 1
+  config.window_padding = {
+    left = "1cell",
+    right = "1cell",
+    top = 0,
+    bottom = 0,
+  }
+  config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
+  wezterm.on("gui-startup", function(cmd)
+    local _, _, window = mux.spawn_window(cmd or {})
+    window:gui_window():maximize()
+  end)
+end
+
 
 return config
