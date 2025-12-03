@@ -8,6 +8,11 @@ return {
 					args = { "--line-length", "120", "-" },
 					stdin = true,
 				},
+				isort = {
+					command = "isort",
+					args = { "--line-length", "120", "-" },
+					stdin = true,
+				},
 				rustfmt = {
 					command = "rustfmt",
 					args = { "--config-path", vim.fn.expand("~/.config/rustfmt/"), "--edition", "2024" },
@@ -15,7 +20,7 @@ return {
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "black" },
+				python = { "black", "isort" },
 				rust = { "rustfmt" },
 			},
 		})
