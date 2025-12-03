@@ -75,8 +75,27 @@ local config = wezterm.config_builder()
 
 config.hide_tab_bar_if_only_one_tab = true
 
+local font_family
+if wezterm.target_triple:find("apple") then
+	config.line_height = 1
+	config.cell_width = 1
+	config.window_padding = {
+		left = "1cell",
+		right = "1cell",
+		top = 0,
+		bottom = 0,
+	}
+	config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
+	wezterm.on("gui-startup", function(cmd)
+		local _, _, window = mux.spawn_window(cmd or {})
+		window:gui_window():maximize()
+	end)
+	font_family = "JetBrains Mono"
+else
+	font_family = "JetBrains Mono NL"
+end
+
 local sync_os = false
-local font_family = "JetBrains Mono NL"
 local font_weight, bold_weight = get_font_weights(appearance, sync_os)
 config.font = wezterm.font({
 	family = font_family,
@@ -128,22 +147,5 @@ config.quick_select_patterns = {
 	"(?<=git:\\().*?(?=\\))",
 }
 config.quit_when_all_windows_are_closed = false
-
-if wezterm.target_triple:find("%apple%") then
-  config.line_height = 1
-  config.cell_width = 1
-  config.window_padding = {
-    left = "1cell",
-    right = "1cell",
-    top = 0,
-    bottom = 0,
-  }
-  config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
-  wezterm.on("gui-startup", function(cmd)
-    local _, _, window = mux.spawn_window(cmd or {})
-    window:gui_window():maximize()
-  end)
-end
-
 
 return config
