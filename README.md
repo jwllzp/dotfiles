@@ -1,2 +1,2 @@
 # dotfiles
-Dotfile repo to be manage with [stow](https://www.gnu.org/software/stow/).
+Dotfile repo to be managed with [stow](https://www.gnu.org/software/stow/).
