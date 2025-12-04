@@ -119,7 +119,7 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 21
+config.font_size = 18
 
 config.colors = require("cyberdream")
 config.window_close_confirmation = "NeverPrompt"
