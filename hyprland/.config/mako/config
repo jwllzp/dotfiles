@@ -1,8 +1,11 @@
 background-color=#000000
-border-color=#aaaaaa
+border-color=#33ccfe
+border-radius=10
 default-timeout=1000
 font=Monaco 14
 margin=30
+max-history=0
+max-visible=1
 padding=15
 text-color=#ffffff
-width=300
+width=200
