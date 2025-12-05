@@ -1,7 +1,7 @@
 background-color=#000000
 border-color=#aaaaaa
 default-timeout=1000
-font=Monospace 24
+font=Monaco 14
 margin=30
 padding=15
 text-color=#ffffff
