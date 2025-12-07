@@ -1,0 +1,6 @@
+hide_search=false
+key_down=Ctrl-n
+key_up=Ctrl-p
+location=top
+prompt=Search
+yoffset=250
