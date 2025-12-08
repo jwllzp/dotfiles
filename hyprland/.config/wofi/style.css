@@ -7,7 +7,7 @@ window {
 }
 
 #input {
-    background-color: transparent;
+    background-color: #000000;
     border: 1px solid #33ccfe;
     border-radius: 12px;
     color: white;
@@ -16,20 +16,22 @@ window {
 }
 
 #inner-box {
-    background-color: transparent;
+    background-color: #000000;
 }
 
 #outer-box {
-    background-color: transparent;
+    background-color: #000000;
+    border: 1px solid #33ccfe;
+    border-radius: 12px;
     padding: 8px;
 }
 
 #scroll {
-    background-color: transparent;
+    background-color: #000000;
 }
 
 #entry {
-    background-color: transparent;
+    background-color: #000000;
     color: white;
     padding: 12px 16px;
     margin: 4px 8px;
