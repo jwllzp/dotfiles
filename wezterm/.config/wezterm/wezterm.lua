@@ -79,6 +79,7 @@ local font_family
 if wezterm.target_triple:find("apple") then
 	config.line_height = 1
 	config.cell_width = 1
+	config.font_size = 21
 	config.window_padding = {
 		left = "1cell",
 		right = "1cell",
@@ -86,6 +87,7 @@ if wezterm.target_triple:find("apple") then
 		bottom = 0,
 	}
 	config.window_decorations = "RESIZE|MACOS_FORCE_DISABLE_SHADOW"
+	config.macos_window_background_blur = 0
 	wezterm.on("gui-startup", function(cmd)
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
@@ -93,6 +95,7 @@ if wezterm.target_triple:find("apple") then
 	font_family = "JetBrains Mono"
 else
 	font_family = "JetBrains Mono NL"
+	config.font_size = 18
 end
 
 local sync_os = false
@@ -119,14 +122,12 @@ config.font_rules = {
 		}),
 	},
 }
-config.font_size = 18
 
 config.colors = require("cyberdream")
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
 config.window_background_opacity = 0.9
-config.macos_window_background_blur = 0
 config.keys = {
 	{
 		key = "-",
