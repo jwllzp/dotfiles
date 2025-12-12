@@ -3,6 +3,7 @@
   "position": "top",
   "modules-left": [],
   "modules-right": [
+	"pulseaudio",
     "battery",
 	"clock#date",
     "clock"
@@ -14,7 +15,15 @@
     "format": "{:%a %d}"
   },
   "battery": {
-    "format": "{}%",
-    "format-charging": "{}%+"
-  }
+    "format": "b{}%",
+    "format-charging": "b{}%+"
+  },
+	"pulseaudio": {
+		"format": "v{volume}%",
+		"format-muted": "vM",
+		"format-icons": {
+			"default": ["🔈", "🔉", "🔊"]
+		},
+		"on-click": "pavucontrol"
+	}
 }
