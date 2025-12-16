@@ -26,20 +26,18 @@ return {
 			group = vim.api.nvim_create_augroup("lsp-attach", { clear = true }),
 			callback = function(event)
 				local map = function(keys, func, desc)
-					vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
+					vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc, noremap = true })
 				end
 				local window_opts = { border = "rounded" }
 				local telescope = require("telescope.builtin")
 				map("gd", telescope.lsp_definitions, "[G]oto [D]efinition")
-				map("gr", telescope.lsp_references, "[G]oto [R]eferences")
-				map("gI", telescope.lsp_implementations, "[G]oto [I]mplementation")
+				map("grr", telescope.lsp_references, "[G]oto [R]eferences")
+				map("gri", telescope.lsp_implementations, "[G]oto [I]mplementation")
 				map("<leader>ds", function()
 					telescope.lsp_document_symbols({ symbol_width = 60 })
 				end, "[D]ocument [S]ymbols")
 				map("<leader>ws", telescope.lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
-				map("<leader>td", telescope.lsp_type_definitions, "[T]ype [D]efinitions")
-				map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
-				map("<leader>ga", vim.lsp.buf.code_action, "[G]et code [a]ctions")
+				map("grt", telescope.lsp_type_definitions, "[T]ype [D]efinitions")
 				map("K", function()
 					vim.lsp.buf.hover(window_opts)
 				end, "Hover Documentation")
@@ -112,7 +110,7 @@ return {
 
 		local ensure_installed = vim.tbl_keys(servers or {})
 
-	  local exclude = {}
+		local exclude = {}
 		for server, settings in pairs(servers) do
 			if not settings["enabled"] then
 				table.insert(exclude, server)
@@ -126,7 +124,7 @@ return {
 		end
 
 		require("mason-lspconfig").setup({
-      -- ensure_installed = ensure_installed,
+			-- ensure_installed = ensure_installed,
 			automatic_enable = {
 				exclude = exclude,
 			},
