@@ -6,7 +6,8 @@
 	"pulseaudio",
     "battery",
 	"clock#date",
-    "clock"
+    "clock",
+	"custom/power"
   ],
   "clock": {
     "format": "{:%H:%M}"
@@ -18,12 +19,17 @@
     "format": "b{}%",
     "format-charging": "b{}%+"
   },
-	"pulseaudio": {
-		"format": "v{volume}%",
-		"format-muted": "vM",
-		"format-icons": {
-			"default": ["🔈", "🔉", "🔊"]
-		},
-		"on-click": "pavucontrol"
-	}
+  "pulseaudio": {
+	  "format": "v{volume}%",
+	  "format-muted": "vM",
+	  "format-icons": {
+		  "default": ["🔈", "🔉", "🔊"]
+	  },
+	  "on-click": "pavucontrol"
+  },
+  "custom/power": {
+	  "format": "⏻",
+	  "on-click": "systemctl poweroff",
+	  "tooltip": false
+  }
 }
