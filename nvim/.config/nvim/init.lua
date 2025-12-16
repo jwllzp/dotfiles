@@ -9,6 +9,15 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 
 require("keymaps.file_copy").setup()
+vim.keymap.set("n", "<leader>yfu", function()
+	local current_line = vim.api.nvim_win_get_cursor(vim.api.nvim_get_current_win())[1]
+	local path = vim.fn.expand("%:.")
+	local github_base = vim.fn.system("git remote get-url origin")
+	local repo = string.sub(github_base, github_base:find(":") + 1, -6)
+	local url = "https://github.com/" .. repo .. "/blob/develop/" .. path .. "#L" .. current_line
+	vim.fn.setreg("+", url)
+	print("Copied github path to clipboard")
+end, { desc = "Copy github path of current file to github" })
 
 vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 

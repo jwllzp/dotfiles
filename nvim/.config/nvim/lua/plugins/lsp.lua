@@ -72,17 +72,6 @@ return {
 				filetypes = { "python" },
 				settings = {},
 			},
-			rust_analyzer = {
-				enabled = true,
-				filetypes = { "rust" },
-				settings = {
-					["rust-analyzer"] = {
-						rustfmt = {
-							enabled = true,
-						},
-					},
-				},
-			},
 		}
 
 		for server, settings in pairs(servers) do
