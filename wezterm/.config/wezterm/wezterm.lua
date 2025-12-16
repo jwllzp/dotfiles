@@ -123,11 +123,11 @@ config.font_rules = {
 	},
 }
 
-config.colors = require("cyberdream")
+-- config.colors = require("cyberdream")
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.8
 config.keys = {
 	{
 		key = "-",
