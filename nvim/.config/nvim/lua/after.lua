@@ -19,13 +19,6 @@ return {
 				end,
 			})
 
-			vim.api.nvim_create_autocmd("FileType", {
-				pattern = "qf",
-				callback = function()
-					vim.cmd("resize 5")
-				end,
-			})
-
 			vim.api.nvim_create_autocmd("BufWritePre", {
 				pattern = "*",
 				callback = function(args)
