@@ -21,7 +21,7 @@ require("lazy").setup({
 		-- import your plugins
 		{ import = "plugins" },
 	},
-	install = { colorscheme = { "lunaperche" } },
+	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true, notify = false },
 	dev = {
