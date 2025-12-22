@@ -79,7 +79,7 @@ local font_family
 if wezterm.target_triple:find("apple") then
 	config.line_height = 1
 	config.cell_width = 1
-	config.font_size = 21
+	config.font_size = 24
 	config.window_padding = {
 		left = "1cell",
 		right = "1cell",
