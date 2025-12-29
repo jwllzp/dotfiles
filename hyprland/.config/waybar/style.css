@@ -5,3 +5,8 @@
   padding: 0 5px
 }
 
+#battery.charging { color: #61afef; }
+#battery.full { color: #98c379; }
+#battery.full-ish { color: #98c379; }
+#battery.mid { color: #d19a66; }
+#battery.need-juice { color: #e86671; }

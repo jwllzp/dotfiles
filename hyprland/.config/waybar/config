@@ -16,9 +16,24 @@
     "format": "{:%a %d}"
   },
   "battery": {
-    "format": "b{}%",
-    "format-charging": "b{}%+"
-  },
+    "interval": 60,
+    "states": {
+        "full": 80,
+        "full-ish": 60,
+		"mid": 40,
+		"need-juice": 20
+    },
+    "format": "b{icon}",
+    "format-charging": "b{icon}+",
+    "format-icons": [
+		"[=    ]",
+		"[==   ]",
+		"[===  ]",
+		"[==== ]",
+		"[=====]"
+	],
+    "max-length": 25
+},
   "pulseaudio": {
     "format": "v{volume}%",
     "format-muted": "vM",
