@@ -18,10 +18,11 @@
   "battery": {
     "interval": 60,
     "states": {
-        "full": 80,
-        "full-ish": 60,
-		"mid": 40,
-		"need-juice": 20
+        "full": 100,
+        "full-ish": 80,
+		"mid": 60,
+		"need-juice": 40,
+		"really-need-juice": 20,
     },
     "format": "b{icon}",
     "format-charging": "b{icon}+",
