@@ -1,9 +1,10 @@
 * {
   font-family: "Jetbrains Mono";
-  font-size: 21;
+  font-size: 21px;
+  font-feature-settings: "liga=0, clig=0, calt=0";
   color: #ffffff;
   background: rgba(0,0,0,.3);
-  padding: 0 5px
+  padding: 0px 5px
 }
 
 #battery.charging { color: #61afef; }
