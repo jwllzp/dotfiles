@@ -1,9 +1,9 @@
 * {
   font-family: "Jetbrains Mono";
-  font-size: 21px;
+  font-size: 18px;
   font-feature-settings: "liga=0, clig=0, calt=0";
   color: #ffffff;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,0.3);
   padding: 0px 5px
 }
 
