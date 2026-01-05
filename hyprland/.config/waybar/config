@@ -33,8 +33,8 @@
 		"[==== ]",
 		"[=====]"
 	],
-    "max-length": 25
-},
+	"max-length": 25
+  },
   "pulseaudio": {
     "format": "v{volume}%",
     "format-muted": "vM",
