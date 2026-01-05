@@ -171,7 +171,6 @@
   "telemetry.feedback.enabled": false,
   "settingsSync.keybindingsPerPlatform": false,
   "workbench.editor.closeEmptyGroups": false,
-  "workbench.preferredLightColorTheme": "Cursor dark midnight",
   "window.autoDetectColorScheme": true,
   "github.copilot.chat.followUps": "never",
   "github.copilot.renameSuggestions.triggerAutomatically": false,
@@ -210,4 +209,6 @@
   "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
   "explorer.confirmDelete": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.preferredLightColorTheme": "ob-theme",
+  "workbench.preferredDarkColorTheme": "Cursor dark midnight",
 }
