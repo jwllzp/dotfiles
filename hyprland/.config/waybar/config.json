@@ -3,8 +3,10 @@
   "position": "top",
   "modules-left": [],
   "modules-right": [
+	"network",
     "pulseaudio",
     "battery",
+	"bluetooth",
     "clock#date",
     "clock",
     "custom/power"
@@ -51,5 +53,22 @@
     "format": "⏻",
     "on-click": "systemctl poweroff",
     "tooltip": false
+  },
+  "network": {
+	"format-wifi": "{icon}",
+	"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": "{ifname} ",
+    "format-disconnected": "Disconnected ⚠",
+    "tooltip-format": "{essid}: {signalStrength}%",
+	"on-click": "nm-connection-editor"
+  },
+  "bluetooth": {
+	"format": " {status}",
+	"format-disabled": " {status}",
+	"format-connected": " {num_connections} connected",
+	"tooltip-format": "{controller_alias}\t{controller_address}",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"on-click": "blueman-manager"
   }
 }

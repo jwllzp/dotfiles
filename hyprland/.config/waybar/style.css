@@ -4,7 +4,7 @@
   font-feature-settings: "liga=0, clig=0, calt=0";
   color: #ffffff;
   background: rgba(24,24,37,1);
-  padding: 0px 5px
+  padding: 0px 10px
 }
 
 #battery.charging { color: #61afef; }
