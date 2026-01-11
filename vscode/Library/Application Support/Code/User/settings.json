@@ -90,21 +90,7 @@
   "vim.neovimConfigPath": "~/.config/nvim/init.lua",
   "vim.neovimUseConfigFile": true,
   "editor.minimap.enabled": false,
-  "vs-kubernetes": {
-    "vs-kubernetes.knownKubeconfigs": [
-      "~/Downloads/mx-prod-cluster.yaml",
-      "~/.kube/mx-prod-cluster.yaml",
-      "~/.kube/ke-prod-cluster.yaml",
-      "~/.kube/rancher/ke-prod-cluster.yaml",
-      "~/.kube/ke-prod-cluster.yaml",
-      "/Users/jaimeparedes/.kube/config"
-    ],
-    "vs-kubernetes.kubeconfig": "/Users/jaimeparedes/.kube/config",
-    "vscode-kubernetes.helm-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path-mac": "/Users/jaimeparedes/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
-    "vs-kubernetes.crd-code-completion": "disabled",
-    "vs-kubernetes.minikube-show-information-expiration": "2025-11-08T22:50:08.083Z"
-  },
+  "vs-kubernetes": {},
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.copyOnSelection": true,
