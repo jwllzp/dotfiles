@@ -197,4 +197,5 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "workbench.preferredLightColorTheme": "ob-theme",
   "workbench.preferredDarkColorTheme": "Cursor dark midnight",
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
 }
