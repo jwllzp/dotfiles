@@ -69,7 +69,7 @@ return {
 		for server, settings in pairs(servers) do
 			if settings["enabled"] then
 				vim.lsp.config(server, settings)
-        		vim.lsp.enable(server)
+				vim.lsp.enable(server)
 			end
 		end
 
