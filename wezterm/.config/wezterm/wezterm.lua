@@ -147,6 +147,7 @@ config.quick_select_patterns = {
 	"(?:[a-z0-9]{16})",
 	"(?<=git\\().*?(?=\\))",
 	"(?<=git:\\().*?(?=\\))",
+	"(?<=\\()\\w+(?=\\))",
 }
 config.quit_when_all_windows_are_closed = false
 
