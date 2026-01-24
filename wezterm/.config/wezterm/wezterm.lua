@@ -123,8 +123,8 @@ config.font_rules = {
 	},
 }
 
--- config.colors = require("dark_vesper")
-config.color_scheme = "Catppuccin Mocha"
+config.colors = require("dark_vesper")
+-- config.color_scheme = "Catppuccin Mocha"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
