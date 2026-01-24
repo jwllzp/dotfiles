@@ -8,11 +8,11 @@ return {
 			auto = true,
 			cache = true,
 			styles = {
-				functions = { bold = true },
-				keywords = { bold = true },
+				functions = {},
+				keywords = {},
 				comments = {},
 				strings = {},
-				constants = { bold = true }, -- includes numbers, booleans
+				constants = {}, -- includes numbers, booleans
 			},
 			colors = {},
 			on_highlights = function(hl, c) end,
