@@ -59,9 +59,9 @@ return {
 		capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
 		local servers = {
-      lua_ls = {
-        enabled = true
-      },
+			lua_ls = {
+				enabled = true,
+			},
 			pyright = {
 				enabled = true,
 				filetypes = { "python" },
@@ -83,9 +83,8 @@ return {
 		for server, settings in pairs(servers) do
 			if settings["enabled"] then
 				vim.lsp.config(server, settings)
-        vim.lsp.enable(server)
+				vim.lsp.enable(server)
 			end
 		end
-
 	end,
 }
