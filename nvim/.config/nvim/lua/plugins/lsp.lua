@@ -63,6 +63,11 @@ return {
 				enabled = true,
 			},
 			pyright = {
+				enabled = false,
+				filetypes = { "python" },
+				settings = {},
+			},
+			basedpyright = {
 				enabled = true,
 				filetypes = { "python" },
 				settings = {},
