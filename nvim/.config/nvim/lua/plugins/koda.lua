@@ -7,7 +7,7 @@ return {
 		require("koda").setup({
 			transparent = true,
 			auto = true,
-			cache = false,
+			cache = true,
 			styles = {
 				functions = { bold = false },
 				keywords = {},
