@@ -134,13 +134,13 @@
   "redhat.telemetry.enabled": true,
   "editor.lineNumbers": "relative",
   "github.copilot.enable": {
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
     "json": false,
     "yamljson": false,
-    "*": false,
-    "python": true
+    "python": false
   },
   "catppuccin.colorOverrides": {},
   "extensions.ignoreRecommendations": true,
@@ -195,7 +195,7 @@
   "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
   "explorer.confirmDelete": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "workbench.preferredLightColorTheme": "ob-theme",
-  "workbench.preferredDarkColorTheme": "Cursor dark midnight",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "docker.extension.dockerEngineAvailabilityPrompt": false,
 }
