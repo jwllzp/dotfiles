@@ -12,6 +12,7 @@ require("keymaps.file_copy").setup()
 
 vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 
+vim.diagnostic.enable(false)
 vim.diagnostic.config({ virtual_text = true })
 vim.g.have_nerd_font = true
 vim.g.loaded_python3_provider = 0
