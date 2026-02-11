@@ -92,10 +92,7 @@ if wezterm.target_triple:find("apple") then
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
 	end)
-	font_family = "SF Mono"
-else
-	font_family = "JetBrains Mono NL"
-	config.font_size = 18
+	font_family = "JetBrains Mono"
 end
 
 local sync_os = false
@@ -124,7 +121,6 @@ config.font_rules = {
 }
 
 config.colors = require("dark_vesper")
--- config.color_scheme = "Catppuccin Mocha"
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
