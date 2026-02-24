@@ -13,6 +13,13 @@ return {
 					args = {
 						"--line-length",
 						"120",
+						"--multi-line",
+						"3",
+						"--trailing-comma",
+						"--force-grid-wrap",
+						"0",
+						"--use-parentheses",
+						"--ensure-newline-before-comments",
 						"-",
 					},
 					stdin = true,
