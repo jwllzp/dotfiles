@@ -195,7 +195,7 @@
   "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
   "explorer.confirmDelete": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "workbench.preferredLightColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Macchiato",
   "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
   "docker.extension.dockerEngineAvailabilityPrompt": false,
   "chat.viewSessions.orientation": "stacked",
