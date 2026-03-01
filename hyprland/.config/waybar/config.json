@@ -35,18 +35,12 @@
 		"[==== ]",
 		"[=====]"
 	],
+	"tooltip-format": "{capacity}%",
 	"max-length": 25
   },
   "pulseaudio": {
     "format": "v{volume}%",
     "format-muted": "vM",
-    "format-icons": {
-      "default": [
-        "🔈",
-        "🔉",
-        "🔊"
-      ]
-    },
     "on-click": "pavucontrol"
   },
   "custom/power": {
