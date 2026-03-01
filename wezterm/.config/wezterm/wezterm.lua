@@ -92,7 +92,7 @@ if wezterm.target_triple:find("apple") then
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
 	end)
-	font_family = "JetBrains Mono"
+	font_family = "JetBrainsMonoNL Nerd Font"
 end
 
 local sync_os = false
