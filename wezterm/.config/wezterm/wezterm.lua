@@ -39,7 +39,7 @@ local function get_font_weights(appearance, sync_os)
 			bold_weight = "Bold"
 		end
 	else
-		normal_weight = "Regular"
+		normal_weight = "Medium"
 		bold_weight = "Bold"
 	end
 	return normal_weight, bold_weight
@@ -79,7 +79,7 @@ local font_family
 if wezterm.target_triple:find("apple") then
 	config.line_height = 1
 	config.cell_width = 1
-	config.font_size = 28
+	config.font_size = 24
 	config.window_padding = {
 		left = "1cell",
 		right = "1cell",
@@ -92,7 +92,8 @@ if wezterm.target_triple:find("apple") then
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
 	end)
-	font_family = "JetBrainsMonoNL Nerd Font"
+	-- font_family = "JetBrainsMonoNL Nerd Font"
+	font_family = "SF Mono"
 end
 
 local sync_os = false
