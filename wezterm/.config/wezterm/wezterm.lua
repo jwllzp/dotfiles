@@ -77,7 +77,7 @@ config.hide_tab_bar_if_only_one_tab = true
 
 local font_family
 if wezterm.target_triple:find("apple") then
-	config.line_height = 1
+	config.line_height = 1.1
 	config.cell_width = 1
 	config.font_size = 24
 	config.window_padding = {
@@ -92,8 +92,7 @@ if wezterm.target_triple:find("apple") then
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
 	end)
-	-- font_family = "JetBrainsMonoNL Nerd Font"
-	font_family = "SF Mono"
+	font_family = "JetBrainsMonoNL Nerd Font"
 end
 
 local sync_os = false
