@@ -92,7 +92,8 @@ if wezterm.target_triple:find("apple") then
 		local _, _, window = mux.spawn_window(cmd or {})
 		window:gui_window():maximize()
 	end)
-	font_family = "JetBrainsMonoNL Nerd Font"
+	-- font_family = "JetBrainsMonoNL Nerd Font"
+	font_family = "ZedMono Nerd Font"
 end
 
 local sync_os = false
@@ -124,7 +125,7 @@ config.colors = require("dark_vesper")
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
-config.window_background_opacity = 0.8
+config.window_background_opacity = 1
 config.keys = {
 	{
 		key = "-",
