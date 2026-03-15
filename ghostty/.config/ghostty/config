@@ -1,10 +1,9 @@
-background-opacity = 0.9
+background-opacity = 0.95
 clipboard-paste-protection = false
 copy-on-select = clipboard
 cursor-style = block
 cursor-style-blink = false
-# font-family = "JetBrainsMonoNL Nerd Font"
-font-family = "SauceCodePro Nerd Font"
+font-family = "JetBrainsMonoNL Nerd Font"
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
