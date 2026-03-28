@@ -1,7 +1,7 @@
 return {
 	"oskarnurm/koda.nvim",
 	priority = 1000,
-	lazy = false,
+	lazy = true,
 	dev = true,
 	config = function()
 		require("koda").setup({

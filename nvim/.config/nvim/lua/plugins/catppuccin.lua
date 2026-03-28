@@ -1,21 +1,21 @@
 return {
 	"catppuccin/nvim",
 	name = "catppuccin",
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
 			compile_path = vim.fn.stdpath("cache") .. "/catppuccin",
 			float = {
 				solid = false,
-				transparent = true,
+				transparent = false,
 			},
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
 			background = { -- :h background
 				light = "latte",
 				dark = "mocha",
 			},
-			transparent_background = true, -- disables setting the background color.
+			transparent_background = false, -- disables setting the background color.
 			show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
 			term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
 			dim_inactive = {
@@ -25,7 +25,7 @@ return {
 			},
 			no_italic = true, -- Force no italic
 			no_bold = true, -- Force no bold
-			no_underline = false, -- Force no underline
+			no_underline = true, -- Force no underline
 			styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
 				comments = {}, -- Change the style of comments
 				conditionals = { "bold" },
@@ -44,19 +44,24 @@ return {
 			color_overrides = {},
 			custom_highlights = function(colors)
 				return {
-					["@module"] = { style = {} },
 					DiagnosticVirtualTextError = { style = {} },
 					DiagnosticVirtualTextHint = { style = {} },
 					DiagnosticVirtualTextInfo = { style = {} },
 					DiagnosticVirtualTextOk = { style = {} },
 					DiagnosticVirtualTextWarn = { style = {} },
+					FloatBorder = { bg = colors.crust },
+					FloatTitle = { fg = colors.red, bg = colors.crust },
 					LineNr = { fg = colors.surface2 },
-          RainbowDelimiter1 = { fg="#ffd700" },
-          RainbowDelimiter2 = { fg="#da70d6" },
-          RainbowDelimiter3 = { fg="#179fff"},
-					TelescopeSelection = { fg = colors.text, bg = colors.surface2, style = {} },
-					TelescopeMatching = { fg = colors.peach, style = {} },
+					Normal = { bg = colors.crust },
+					NormalFloat = { bg = colors.crust },
+					NormalNC = { link = "Normal" },
+					RainbowDelimiter1 = { fg = "#ffd700" },
+					RainbowDelimiter2 = { fg = "#da70d6" },
+					RainbowDelimiter3 = { fg = "#179fff" },
 					Visual = { style = {} },
+					["@module"] = { style = {} },
+					["@spell.python"] = { fg = colors.overlay2 },
+					["@string.documentation.python"] = { fg = colors.overlay2 },
 				}
 			end,
 			default_integrations = true,
