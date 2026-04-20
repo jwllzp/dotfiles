@@ -124,7 +124,7 @@ config.colors = require("dark_vesper")
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.bold_brightens_ansi_colors = false
-config.window_background_opacity = 1
+config.window_background_opacity = 0.75
 config.keys = {
 	{
 		key = "-",
