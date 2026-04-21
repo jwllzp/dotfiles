@@ -1,3 +1,5 @@
+local after = require("after").setup
+
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<leader>]", ":lnext <Cr>")
 vim.keymap.set("n", "<leader>[", ":lprev <Cr>")
@@ -43,6 +45,5 @@ vim.opt.updatetime = 250
 vim.opt.wrap = false
 
 require("config.lazy")
-after = require("after").setup
 after.autocmds()
 after.colorscheme({ transparent = true })
