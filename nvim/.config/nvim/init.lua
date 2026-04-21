@@ -43,5 +43,6 @@ vim.opt.updatetime = 250
 vim.opt.wrap = false
 
 require("config.lazy")
-require("after").setup.autocmds()
--- require("after").setup.colorscheme({ transparent = true })
+after = require("after").setup
+after.autocmds()
+after.colorscheme({ transparent = true })
