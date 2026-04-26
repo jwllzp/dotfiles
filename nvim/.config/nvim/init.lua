@@ -47,6 +47,7 @@ vim.opt.wrap = false
 require("plugins.autopairs")
 require("plugins.cloak")
 require("plugins.cmp")
+require("plugins.conform")
 require("plugins.gitsigns")
 require("plugins.koda")
 require("plugins.lsp")
