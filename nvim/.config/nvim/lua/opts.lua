@@ -1,0 +1,31 @@
+vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
+
+-- vim.diagnostic.config({ virtual_text = true })
+vim.g.have_nerd_font = true
+vim.g.loaded_python3_provider = 0
+vim.o.termguicolors = true
+vim.opt.autoindent = false
+vim.opt.autoread = true
+vim.opt.breakindent = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.confirm = true
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
+vim.opt.fixendofline = false
+vim.opt.guicursor = "a:block-Cursor"
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true
+vim.opt.inccommand = "split"
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.scrolloff = 3
+vim.opt.showmode = false
+vim.opt.signcolumn = "yes:1"
+vim.opt.smartcase = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.sw = 4
+vim.opt.timeoutlen = 500
+vim.opt.ts = 4
+vim.opt.updatetime = 250
+vim.opt.wrap = false
