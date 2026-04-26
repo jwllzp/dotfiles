@@ -1,0 +1,16 @@
+require("plugins.autopairs")
+require("plugins.cloak")
+require("plugins.cmp")
+require("plugins.conform")
+require("plugins.gitsigns")
+require("plugins.harpoon")
+require("plugins.lsp")
+require("plugins.mini-align")
+require("plugins.lualine")
+require("plugins.oil")
+require("plugins.rainbow-delimiters")
+require("plugins.telescope")
+require("plugins.treesitter")
+
+-- colorscheme must go at the end
+require("plugins.koda")

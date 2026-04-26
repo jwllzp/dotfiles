@@ -1,9 +1,7 @@
-return {
-	"norcalli/nvim-colorizer.lua",
-	lazy=false,
-	config = function()
-		require("colorizer").setup({
-			"lua", "json", "markdown", "css";
-		})
-	end
-}
+vim.pack.add({
+  "https://github.com/norcalli/nvim-colorizer.lua",
+})
+
+require("colorizer").setup({
+  "lua", "json", "markdown", "css";
+})
