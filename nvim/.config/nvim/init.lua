@@ -44,6 +44,17 @@ vim.opt.ts = 4
 vim.opt.updatetime = 250
 vim.opt.wrap = false
 
-require("config.lazy")
+require("plugins.autopairs")
+require("plugins.cloak")
+require("plugins.cmp")
+require("plugins.gitsigns")
+require("plugins.koda")
+require("plugins.lualine")
+require("plugins.oil")
+require("plugins.rainbow-delimiters")
+require("plugins.telescope")
+require("plugins.treesitter")
+
+
 after.autocmds()
-after.colorscheme({ transparent = true })
+-- after.colorscheme({ transparent = true })
