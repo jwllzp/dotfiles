@@ -49,12 +49,12 @@ require("plugins.cloak")
 require("plugins.cmp")
 require("plugins.gitsigns")
 require("plugins.koda")
+require("plugins.lsp")
 require("plugins.lualine")
 require("plugins.oil")
 require("plugins.rainbow-delimiters")
 require("plugins.telescope")
 require("plugins.treesitter")
-
 
 after.autocmds()
 -- after.colorscheme({ transparent = true })
