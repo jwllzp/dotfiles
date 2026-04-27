@@ -3,11 +3,11 @@ vim.pack.add({
 })
 
 require("koda").setup({
-	transparent = true,
+	transparent = false,
 	auto = true,
 	cache = false,
 	styles = {
-		functions = { bold = false },
+		functions = {},
 		keywords = {},
 		comments = {},
 		strings = {},
