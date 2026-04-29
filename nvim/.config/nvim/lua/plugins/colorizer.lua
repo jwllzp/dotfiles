@@ -1,7 +1,10 @@
 vim.pack.add({
-  "https://github.com/norcalli/nvim-colorizer.lua",
+	"https://github.com/norcalli/nvim-colorizer.lua",
 })
 
 require("colorizer").setup({
-  "lua", "json", "markdown", "css";
+	"lua",
+	"json",
+	"markdown",
+	"css",
 })

@@ -3,7 +3,7 @@ vim.pack.add({
 	"https://github.com/hrsh7th/nvim-cmp",
 })
 
-require("nvim-autopairs").setup {}
+require("nvim-autopairs").setup({})
 
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 local cmp = require("cmp")

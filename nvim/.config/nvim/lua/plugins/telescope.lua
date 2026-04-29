@@ -5,7 +5,6 @@ vim.pack.add({
 	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
 })
 
-
 local builtin = require("telescope.builtin")
 local lga_actions = require("telescope-live-grep-args.actions")
 local extensions = require("telescope").extensions
