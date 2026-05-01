@@ -67,7 +67,15 @@ local servers = {
 	basedpyright = {
 		enabled = true,
 		filetypes = { "python" },
-		settings = {},
+		settings = {
+			basedpyright = {
+				analysis = {
+					autoSearchPaths = true,
+					diagnosticMode = "openFilesOnly",
+					exclude = { "**/*.ipynb" },
+				},
+			},
+		},
 	},
 	rust_analyzer = {
 		enabled = true,
