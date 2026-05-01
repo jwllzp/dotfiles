@@ -73,6 +73,7 @@ local servers = {
 					autoSearchPaths = true,
 					diagnosticMode = "openFilesOnly",
 					exclude = { "**/*.ipynb" },
+					typeCheckingMode = "standard",
 				},
 			},
 		},
