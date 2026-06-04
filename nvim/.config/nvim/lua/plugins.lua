@@ -15,4 +15,3 @@ require("plugins.treesitter")
 
 -- colorscheme must go at the end
 -- require("plugins.themes.tokyonight")
-vim.api.nvim_set_hl(0, "Normal", { bg=nil })
