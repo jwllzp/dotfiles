@@ -13,7 +13,7 @@ require("cyberdream").setup({
 	cache = true,
 	extensions = {},
 	highlights = {
-		-- Cursor = { reverse = true },
+		Cursor = { reverse = true },
 		-- CursorLineNr = { fg = c.fg },
 		-- Delimiter = { fg = c.grey },
 		-- Boolean = { fg = c.pink, bold = true },
