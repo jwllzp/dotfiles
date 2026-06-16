@@ -4,7 +4,7 @@ vim.cmd([[au FileType * set fo-=c fo-=r fo-=o]])
 vim.g.have_nerd_font = true
 vim.g.loaded_python3_provider = 0
 vim.o.termguicolors = true
-vim.opt.autoindent = false
+vim.opt.autoindent = true
 vim.opt.autoread = true
 vim.opt.breakindent = true
 vim.opt.clipboard = "unnamedplus"

@@ -3,9 +3,13 @@ vim.pack.add({
 })
 
 require("koda").setup({
+	theme = {
+		dark = "dark",
+		light = "light",
+	},
 	transparent = false,
 	auto = true,
-	cache = false,
+	cache = true,
 	styles = {
 		functions = {},
 		keywords = {},
