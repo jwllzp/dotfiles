@@ -18,7 +18,7 @@ require("koda").setup({
 		constants = {}, -- includes numbers, booleans
 	},
 	colors = {},
-	on_highlights = function(hl, c)
+	on_highlights = function(hl, _)
 		hl.RainbowDelimiter1 = { fg = "#da70d6" }
 		hl.RainbowDelimiter2 = { fg = "#179fff" }
 		hl.RainbowDelimiter3 = { fg = "#ffd700" }
