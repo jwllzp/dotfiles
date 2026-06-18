@@ -7,7 +7,7 @@ require("koda").setup({
 		dark = "dark",
 		light = "light",
 	},
-	transparent = false,
+	transparent = true,
 	auto = true,
 	cache = true,
 	styles = {
@@ -19,9 +19,9 @@ require("koda").setup({
 	},
 	colors = {},
 	on_highlights = function(hl, _)
-		hl.RainbowDelimiter1 = { fg = "#da70d6" }
-		hl.RainbowDelimiter2 = { fg = "#179fff" }
-		hl.RainbowDelimiter3 = { fg = "#ffd700" }
+		-- hl.RainbowDelimiter1 = { fg = "#da70d6" }
+		-- hl.RainbowDelimiter2 = { fg = "#179fff" }
+		-- hl.RainbowDelimiter3 = { fg = "#ffd700" }
 	end,
 })
 vim.cmd.colorscheme("koda")
