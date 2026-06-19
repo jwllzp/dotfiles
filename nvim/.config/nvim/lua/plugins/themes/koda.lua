@@ -18,6 +18,6 @@ require("koda").setup({
 		constants = { bold = false }, -- includes numbers, booleans
 	},
 	colors = {},
-	on_highlights = function(hl, _) end,
+	on_highlights = function(_, _) end,
 })
 vim.cmd.colorscheme("koda")
