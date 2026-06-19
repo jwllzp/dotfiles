@@ -1,9 +1,10 @@
+adjust-cell-height = 10%
 background-opacity = 0.90
 clipboard-paste-protection = false
 copy-on-select = clipboard
 cursor-style = block
 cursor-style-blink = false
-font-family = "JetBrainsMonoNL Nerd Font"
+font-family = "SF mono"
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
