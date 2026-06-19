@@ -18,10 +18,6 @@ require("koda").setup({
 		constants = { bold = false }, -- includes numbers, booleans
 	},
 	colors = {},
-	on_highlights = function(hl, _)
-		-- hl.RainbowDelimiter1 = { fg = "#da70d6" }
-		-- hl.RainbowDelimiter2 = { fg = "#179fff" }
-		-- hl.RainbowDelimiter3 = { fg = "#ffd700" }
-	end,
+	on_highlights = function(hl, _) end,
 })
 vim.cmd.colorscheme("koda")

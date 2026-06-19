@@ -15,3 +15,4 @@ require("plugins.treesitter")
 
 -- colorscheme must go at the end
 require("plugins.themes.koda")
+require("highlights")

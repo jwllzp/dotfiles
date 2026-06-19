@@ -99,7 +99,3 @@ require("treesitter-context").setup({
 	zindex = 20,
 	on_attach = nil,
 })
-
-vim.api.nvim_set_hl(0, "TreesitterContext", { link = "Normal" })
-vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { link = "Normal" })
-vim.api.nvim_set_hl(0, "TreesitterContextBottom", { underline = true })
