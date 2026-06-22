@@ -25,23 +25,23 @@ require("telescope").setup({
 	},
 	pickers = {
 		commands = {
-			theme = "dropdown",
+			theme = "ivy",
 			previewer = false,
 		},
 		find_files = {
-			theme = "dropdown",
+			theme = "ivy",
 			previewer = false,
 		},
 		git_files = {
-			theme = "dropdown",
+			theme = "ivy",
 			previewer = false,
 		},
 		lsp_document_symbols = {
-			theme = "dropdown",
+			theme = "ivy",
 			previewer = false,
 		},
 		lsp_references = {
-			theme = "dropdown",
+			theme = "ivy",
 			previewer = false,
 		},
 	},
@@ -71,7 +71,11 @@ require("telescope").load_extension("live_grep_args")
 -- require("telescope").load_extension("fzf")
 
 vim.keymap.set("n", "<leader>ff", find_files)
-vim.keymap.set("n", "<leader>sf", builtin.git_files)
+vim.keymap.set("n", "<leader>sf", function()
+	builtin.git_files({
+		show_untracked = true,
+	})
+end)
 vim.keymap.set("n", "<leader>fh", builtin.help_tags)
 vim.keymap.set("n", "<leader>gs", builtin.grep_string)
 vim.keymap.set("n", "<leader>dg", builtin.diagnostics)
