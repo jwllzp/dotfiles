@@ -3,45 +3,23 @@ vim.pack.add({
 })
 
 require("neomodern").setup({
-	theme = "iceclimber",
-	variant = "dark",
-	alt_bg = true,
-	colored_docstrings = false,
-	cursorline_gutter = true,
-	dark_gutter = false,
-	favor_treesitter_hl = false,
-	plain_float = false,
-	show_eob = true,
-	term_colors = true,
-	toggle_variant_key = nil,
-	transparent = false,
+	-- 'default' default background
+	-- 'alt' darker background
+	-- 'transparent' background is not set
+	bg = "alt",
+	theme = "roseprime", -- 'moon' | 'iceclimber' | 'gyokuro' | 'hojicha' | 'roseprime'
+	gutter = {
+		cursorline = false, -- highlight the cursorline in the gutter
+		dark = false, -- highlight gutter darker than the Normal bg
+	},
 	diagnostics = {
-		darker = true,
-		undercurl = true,
-		background = true,
+		darker = true, -- use darker colors for diagnostics
+		undercurl = true, -- use undercurl for diagnostics
+		background = true, -- use a background color for diagnostics
 	},
-	code_style = {
-		comments = "none",
-		conditionals = "none",
-		functions = "none",
-		keywords = "bold",
-		headings = "bold", -- Markdown headings
-		operators = "none",
-		keyword_return = "bold",
-		strings = "none",
-		variables = "none",
-	},
-	highlights = {
-		FloatBorder = { fg = "#555568", bg = "none" },
-		NormalFloat = { bg = "#111113", fg = "##bbbac1" },
-		TelescopeMatching = { fg = "#e67e80" },
-		TelescopeSelection = { bg = "#2a2a31" },
-		["@keyword.conditional"] = { fg = "#8a88db", fmt = "bold" },
-		["@keyword.operator"] = { fg = "#8a88db", fmt = "bold" },
-		["@keyword.exception"] = { fg = "#e67e80", fmt = "bold" },
-		["@boolean"] = { fg = "#cfa18c", fmt = "bold" },
-		["@lsp.type.macro"] = { fg = "#cfa18c", fmt = "none" },
-		["@lsp.type.lifetime"] = { fg = "#a8a6de", fmt = "none" },
+	overrides = {
+		default = {},
+		hlgroups = {},
 	},
 })
 require("neomodern").load()
