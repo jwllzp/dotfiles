@@ -4,7 +4,7 @@ vim.pack.add({
 
 require("koda").setup({
 	theme = {
-		dark = "moss",
+		dark = "dark",
 		light = "light",
 	},
 	transparent = true,
