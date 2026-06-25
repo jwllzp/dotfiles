@@ -7,7 +7,7 @@ require("koda").setup({
 		dark = "dark",
 		light = "light",
 	},
-	transparent = true,
+	transparent = false,
 	auto = true,
 	cache = true,
 	styles = {
