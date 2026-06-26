@@ -25,23 +25,23 @@ require("telescope").setup({
 	},
 	pickers = {
 		commands = {
-			theme = "ivy",
+			theme = "dropdown",
 			previewer = false,
 		},
 		find_files = {
-			theme = "ivy",
+			theme = "dropdown",
 			previewer = false,
 		},
 		git_files = {
-			theme = "ivy",
+			theme = "dropdown",
 			previewer = false,
 		},
 		lsp_document_symbols = {
-			theme = "ivy",
+			theme = "dropdown",
 			previewer = false,
 		},
 		lsp_references = {
-			theme = "ivy",
+			theme = "dropdown",
 			previewer = false,
 		},
 	},

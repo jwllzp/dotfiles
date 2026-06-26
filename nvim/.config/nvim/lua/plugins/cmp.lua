@@ -61,14 +61,7 @@ cmp.setup({
 		["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 		["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
 		["<C-Space>"] = cmp.mapping.complete(),
-		-- ["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert }),
-		["<CR>"] = function(fallback)
-			if cmp.visible() then
-				cmp.confirm()
-			else
-				fallback()
-			end
-		end,
+		["<CR>"] = cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert }),
 	}),
 	window = {},
 	formatting = {
