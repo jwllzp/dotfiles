@@ -11,11 +11,11 @@ require("koda").setup({
 	auto = true,
 	cache = true,
 	styles = {
-		functions = { bold = false },
-		keywords = { bold = false },
-		comments = { bold = false },
-		strings = { bold = false },
-		constants = { bold = false }, -- includes numbers, booleans
+		functions = {},
+		keywords = {},
+		comments = {},
+		strings = {},
+		constants = {}, -- includes numbers, booleans
 	},
 	colors = {},
 	on_highlights = function(_, _) end,
