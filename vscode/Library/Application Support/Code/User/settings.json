@@ -197,6 +197,6 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "docker.extension.dockerEngineAvailabilityPrompt": false,
   "chat.viewSessions.orientation": "stacked",
-  "workbench.preferredLightColorTheme": "Light 2026",
+  "workbench.preferredLightColorTheme": "Dark 2026",
   "workbench.preferredDarkColorTheme": "Dark 2026",
 }
