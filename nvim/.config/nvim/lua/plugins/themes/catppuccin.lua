@@ -13,7 +13,7 @@ require("catppuccin").setup({
 		light = "latte",
 		dark = "mocha",
 	},
-	transparent_background = false, -- disables setting the background color.
+	transparent_background = true, -- disables setting the background color.
 	show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
 	term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
 	dim_inactive = {
@@ -49,10 +49,10 @@ require("catppuccin").setup({
 			DiagnosticVirtualTextWarn = { style = {} },
 			-- FloatBorder = { bg = colors.crust },
 			-- FloatTitle = { fg = colors.red, bg = colors.crust },
-			LineNr = { fg = colors.surface2 },
-			Normal = { bg = colors.crust },
+			-- LineNr = { fg = colors.surface2 },
+			-- Normal = { bg = colors.crust },
 			-- NormalFloat = { bg = colors.crust },
-			NormalNC = { link = "Normal" },
+			-- NormalNC = { link = "Normal" },
 			RainbowDelimiter1 = { fg = "#ffd700" },
 			RainbowDelimiter2 = { fg = "#da70d6" },
 			RainbowDelimiter3 = { fg = "#179fff" },
