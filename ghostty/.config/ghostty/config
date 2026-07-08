@@ -1,5 +1,5 @@
 adjust-cell-height = 10%
-background-opacity = 0.90
+background-opacity = 100
 clipboard-paste-protection = false
 copy-on-select = clipboard
 cursor-style = block
