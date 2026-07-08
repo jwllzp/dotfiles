@@ -106,8 +106,8 @@ auto_switch = false
 
 # Navigate-mode movement. These local shortcuts win while navigate mode is open.
 # They are independent from focus_pane_*. Do not include prefix+, esc, enter, tab, or 1..9 here.
-# navigate_workspace_up = "up"
-# navigate_workspace_down = "down"
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
 # navigate_pane_left = "h"      # left arrow always focuses the pane to the left
 # navigate_pane_down = "j"
 # navigate_pane_up = "k"
@@ -167,7 +167,7 @@ confirm_close = false
 
 # Ask for a tab name before creating a new tab.
 # Set false to create tabs immediately with generated names.
-prompt_new_tab_name = false
+prompt_new_tab_name = true
 
 # Draw borders around split panes.
 pane_borders = true
