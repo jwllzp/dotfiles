@@ -9,7 +9,7 @@ onboarding = false
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
-name = "vesper"
+name = "nord"
 
 # Follow host terminal light/dark appearance and switch Herdr UI themes.
 # Existing manual behavior is unchanged unless this is true.
@@ -160,14 +160,14 @@ navigate_workspace_down = "j"
 # redraw_on_focus_gained = true
 
 # Pane scrollback lines to scroll per mouse wheel notch.
-mouse_scroll_lines = 1
+mouse_scroll_lines = 3
 
 # Ask for confirmation before closing a workspace
 confirm_close = false
 
 # Ask for a tab name before creating a new tab.
 # Set false to create tabs immediately with generated names.
-prompt_new_tab_name = true
+prompt_new_tab_name = false
 
 # Draw borders around split panes.
 pane_borders = true
