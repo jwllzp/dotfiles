@@ -16,7 +16,7 @@ require("nord").setup({
 	styles = {
 		-- Style to be applied to different syntax groups
 		-- Value is any valid attr-list value for `:help nvim_set_hl`
-		comments = { italic = true },
+		comments = { italic = false },
 		keywords = {},
 		functions = {},
 		variables = {},
@@ -24,7 +24,7 @@ require("nord").setup({
 		-- To customize lualine/bufferline
 		bufferline = {
 			current = {},
-			modified = { italic = true },
+			modified = { italic = false },
 		},
 
 		lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
