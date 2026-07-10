@@ -34,5 +34,6 @@ require("conform").setup({
 		lua = { "stylua" },
 		python = { "black", "isort" },
 		rust = { "rustfmt" },
+		json = { "jq" },
 	},
 })
