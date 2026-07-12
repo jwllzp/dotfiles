@@ -78,6 +78,13 @@ local servers = {
 			},
 		},
 	},
+	gopls = {
+		settings = {
+			gopls = {
+				semanticTokens = false,
+			},
+		},
+	},
 	rust_analyzer = {
 		enabled = true,
 		filetypes = { "rust" },
