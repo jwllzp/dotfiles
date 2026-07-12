@@ -79,6 +79,7 @@ local servers = {
 		},
 	},
 	gopls = {
+		enabled = true,
 		settings = {
 			gopls = {
 				semanticTokens = false,
