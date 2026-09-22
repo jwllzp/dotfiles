@@ -4,9 +4,9 @@ vim.pack.add({
 
 require("cloak").setup({
 	enabled = true,
-	cloak_character = "x",
+	cloak_character = "...",
 	highlight_group = "Comment",
-	cloak_length = 10,
+	cloak_length = 1,
 	try_all_patterns = true,
 	patterns = {
 		{
