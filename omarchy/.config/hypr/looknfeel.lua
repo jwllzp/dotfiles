@@ -48,3 +48,13 @@
 --     column_width = 0.97,
 --   },
 -- })
+
+hl.config({
+  decoration = {
+    rounding = 10,
+    rounding_power = 2,
+    shadow = { enabled = false },
+    blur = { enabled = false },
+  },
+  animations = { enabled = false },
+})

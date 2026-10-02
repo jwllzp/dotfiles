@@ -55,3 +55,26 @@
 -- Enable touchpad gestures for moving focus (helpful on scrolling layout).
 -- hl.gesture({ fingers = 3, direction = "left", action = function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end })
 -- hl.gesture({ fingers = 3, direction = "right", action = function() hl.dispatch(hl.dsp.focus({ direction = "r" })) end })
+
+hl.config({
+  input = {
+    kb_layout = "us",
+    kb_variant = "altgr-intl",
+    kb_options = "ctrl:nocaps",
+    repeat_rate = 100,
+    repeat_delay = 200,
+    numlock_by_default = true,
+    sensitivity = 1,
+    natural_scroll = true,
+
+    touchpad = {
+      natural_scroll = true,
+      clickfinger_behavior = true,
+      scroll_factor = 0.4,
+      tap_and_drag = false,
+    },
+  },
+})
+
+o.window("(Alacritty|kitty|foot)", { scroll_touchpad = 1.5 })
+o.window("com.mitchellh.ghostty", { scroll_touchpad = 0.2 })

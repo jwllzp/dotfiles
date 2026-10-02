@@ -27,3 +27,28 @@
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+
+-- Custom bindings.
+-- SUPER+ALT+RETURN was Tmux; now runs a custom launch script.
+hl.unbind("SUPER + ALT + RETURN")
+o.bind("SUPER + ALT + RETURN", "Launch script", "ghostty -e ~/launch.sh")
+
+-- SUPER+SHIFT+W was Omawrite; now Typora.
+hl.unbind("SUPER + SHIFT + W")
+o.bind("SUPER + SHIFT + W", "Typora", { launch = "typora --enable-wayland-ime" })
+
+-- Vim-style focus movement.
+-- SUPER+J was toggle split, SUPER+K was keybindings menu, SUPER+L was workspace layout toggle.
+hl.unbind("SUPER + H")
+hl.unbind("SUPER + J")
+hl.unbind("SUPER + K")
+hl.unbind("SUPER + L")
+o.bind("SUPER + H", nil, hl.dsp.focus({ direction = "l" }))
+o.bind("SUPER + J", nil, hl.dsp.focus({ direction = "d" }))
+o.bind("SUPER + K", nil, hl.dsp.focus({ direction = "u" }))
+o.bind("SUPER + L", nil, hl.dsp.focus({ direction = "r" }))
+
+-- Toggle the laptop display.
+-- SUPER+P was pseudo window.
+hl.unbind("SUPER + P")
+o.bind("SUPER + P", "Toggle laptop monitor", "~/.config/hypr/scripts/monitors.sh")
