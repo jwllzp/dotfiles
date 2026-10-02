@@ -60,7 +60,7 @@ hl.config({
   input = {
     kb_layout = "us",
     kb_variant = "altgr-intl",
-    kb_options = "ctrl:nocaps",
+    kb_options = "ctrl:swapcaps",
     repeat_rate = 100,
     repeat_delay = 200,
     numlock_by_default = true,

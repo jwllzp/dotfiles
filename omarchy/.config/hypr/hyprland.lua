@@ -27,4 +27,4 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
-o.window({ tag = "default-opacity" }, { opacity = "1 0.9" })
+o.window({ tag = "default-opacity" }, { opacity = "0.95 0.95" })

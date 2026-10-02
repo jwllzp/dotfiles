@@ -50,11 +50,14 @@
 -- })
 
 hl.config({
-  decoration = {
-    rounding = 10,
-    rounding_power = 2,
-    shadow = { enabled = false },
-    blur = { enabled = false },
-  },
-  animations = { enabled = false },
+	decoration = {
+		rounding = 10,
+		rounding_power = 2,
+		shadow = { enabled = false },
+		blur = { enabled = false },
+		active_opacity = 0.95,
+		inactive_opacity = 0.95,
+		dim_inactive = false,
+	},
+	animations = { enabled = false },
 })
