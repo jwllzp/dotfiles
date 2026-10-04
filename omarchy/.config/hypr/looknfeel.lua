@@ -61,3 +61,6 @@ hl.config({
 	},
 	animations = { enabled = false },
 })
+
+hl.env("XCURSOR_SIZE", "20")
+hl.env("HYPRCURSOR_SIZE", "20")
