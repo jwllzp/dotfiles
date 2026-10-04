@@ -62,7 +62,7 @@ hl.config({
 		kb_variant = "altgr-intl",
 		kb_options = "ctrl:swapcaps",
 		repeat_rate = 100,
-		repeat_delay = 150,
+		repeat_delay = 175,
 		numlock_by_default = true,
 		sensitivity = 0.2,
 		natural_scroll = true,
