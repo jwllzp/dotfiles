@@ -60,7 +60,8 @@ hl.config({
 		dim_inactive = false,
 	},
 	layout = {
-		single_window_aspect_ratio = { 1, 0.8 },
+		single_window_aspect_ratio = { 1, 0.9 },
+		single_window_aspect_ratio_tolerance = 0,
 	},
 	animations = { enabled = false },
 })
