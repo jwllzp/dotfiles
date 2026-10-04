@@ -51,4 +51,4 @@ o.bind("SUPER + L", nil, hl.dsp.focus({ direction = "r" }))
 -- Toggle the laptop display.
 -- SUPER+P was pseudo window.
 hl.unbind("SUPER + P")
-o.bind("SUPER + P", "Toggle laptop monitor", "~/.config/hypr/scripts/monitors.sh")
+o.bind("SUPER + P", "Cycle monitors (both -> external -> laptop)", "~/.config/hypr/scripts/monitors.sh")

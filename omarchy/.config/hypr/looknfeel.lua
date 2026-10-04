@@ -59,6 +59,9 @@ hl.config({
 		inactive_opacity = 0.95,
 		dim_inactive = false,
 	},
+	layout = {
+		single_window_aspect_ratio = { 1, 0.8 },
+	},
 	animations = { enabled = false },
 })
 
