@@ -12,7 +12,7 @@ require("koda").setup({
 	cache = true,
 	styles = {
 		functions = {},
-		keywords = {},
+		keywords = { bold = true },
 		comments = {},
 		strings = {},
 		constants = {}, -- includes numbers, booleans
