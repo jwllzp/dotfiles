@@ -1,7 +1,0 @@
-hide_search=false
-key_down=Ctrl-n
-key_up=Ctrl-p
-location=top
-matching=fuzzy
-prompt=Search
-yoffset=200
