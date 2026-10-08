@@ -9,7 +9,7 @@ onboarding = false
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
-name = "catppuccin"
+name = "vesper"
 
 # Follow host terminal light/dark appearance and switch Herdr UI themes.
 # Existing manual behavior is unchanged unless this is true.
@@ -133,7 +133,7 @@ navigate_workspace_down = "j"
 
 [ui]
 # Sidebar width (auto-scaled based on workspace names, this sets the default)
-sidebar_width = 30
+sidebar_width = 25
 
 # Minimum sidebar width when expanded (columns)
 # sidebar_min_width = 18
@@ -170,7 +170,7 @@ confirm_close = false
 prompt_new_tab_name = false
 
 # Draw borders around split panes.
-pane_borders = false
+pane_borders = true
 
 # Keep split panes visually separated instead of sharing divider borders.
 pane_gaps = false
@@ -191,6 +191,7 @@ pane_scrollbars = false
 
 # Background notification popup delivery
 show_agent_labels_on_pane_borders = false
+status_indicators = "dots"
 [ui.toast]
 # off = disable pop-up notifications
 # herdr = show in-app toasts
