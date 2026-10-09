@@ -13,5 +13,5 @@ require("plugins.rainbow-delimiters")
 require("plugins.telescope")
 require("plugins.treesitter")
 
-require("plugins.themes.koda")
+require("plugins.themes.cyberdream")
 require("highlights")
