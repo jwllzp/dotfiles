@@ -9,7 +9,7 @@ onboarding = false
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
-name = "vesper"
+name = "terminal"
 
 # Follow host terminal light/dark appearance and switch Herdr UI themes.
 # Existing manual behavior is unchanged unless this is true.
@@ -19,11 +19,21 @@ auto_switch = false
 
 # Override individual color tokens on top of the base theme.
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
-# [theme.custom]
-# panel_bg = "reset"
-# accent = "#f5c2e7"
-# red = "#ff6188"
-# green = "#a6e3a1"
+# Cyberdream
+[theme.custom]
+panel_bg = "#16181a"
+sidebar_bg = "#16181a"
+active_row_bg = "#3c4048"
+selection_bg = "#3c4048"
+text = "#ffffff"
+accent = "#5ef1ff"
+red = "#ff6e5e"
+green = "#5eff6c"
+yellow = "#f1ff5e"
+blue = "#5ea1ff"
+mauve = "#bd5eff"
+peach = "#ffbd5e"
+surface_dim = "#3c4048"
 
 [terminal]
 # Executable used for new interactive panes.
