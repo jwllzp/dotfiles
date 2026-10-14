@@ -21,8 +21,8 @@ auto_switch = false
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
 # Nvim Dark (matches ghostty "Nvim Dark")
 [theme.custom]
-panel_bg = "#14161b"      # NvimDarkGrey2
-sidebar_bg = "#14161b"
+panel_bg = "reset"        # inherit terminal bg/opacity (was #14161b NvimDarkGrey2)
+sidebar_bg = "reset"      # inherit terminal bg/opacity
 active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
 selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
 text = "#e0e2ea"          # NvimLightGrey2
