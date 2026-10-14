@@ -9,7 +9,7 @@ onboarding = false
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
 #                  vesper
-name = "terminal"
+name = "catppuccin"
 
 # Follow host terminal light/dark appearance and switch Herdr UI themes.
 # Existing manual behavior is unchanged unless this is true.
@@ -19,21 +19,40 @@ auto_switch = false
 
 # Override individual color tokens on top of the base theme.
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
-# Cyberdream
+# Nvim Dark (matches ghostty "Nvim Dark")
 [theme.custom]
-panel_bg = "#16181a"
-sidebar_bg = "#16181a"
-active_row_bg = "#3c4048"
-selection_bg = "#3c4048"
-text = "#ffffff"
-accent = "#5ef1ff"
-red = "#ff6e5e"
-green = "#5eff6c"
-yellow = "#f1ff5e"
-blue = "#5ea1ff"
-mauve = "#bd5eff"
-peach = "#ffbd5e"
-surface_dim = "#3c4048"
+panel_bg = "#14161b"      # NvimDarkGrey2
+sidebar_bg = "#14161b"
+active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
+selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
+text = "#e0e2ea"          # NvimLightGrey2
+accent = "#8cf8f7"        # NvimLightCyan
+red = "#ffc0b9"
+green = "#b3f6c0"
+yellow = "#fce094"
+blue = "#a6dbff"
+mauve = "#ffcaff"
+peach = "#fce094"         # nvim has no orange; reuse yellow
+surface_dim = "#4f5258"
+# Agent status dots: working=yellow, blocked=red, done=teal, idle=green, unknown=overlay0
+teal = "#8cf8f7"          # NvimLightCyan
+overlay0 = "#9b9ea4"      # NvimLightGrey4
+
+# Cyberdream
+# [theme.custom]
+# panel_bg = "#16181a"
+# sidebar_bg = "#16181a"
+# active_row_bg = "#3c4048"
+# selection_bg = "#3c4048"
+# text = "#ffffff"
+# accent = "#5ef1ff"
+# red = "#ff6e5e"
+# green = "#5eff6c"
+# yellow = "#f1ff5e"
+# blue = "#5ea1ff"
+# mauve = "#bd5eff"
+# peach = "#ffbd5e"
+# surface_dim = "#3c4048"
 
 [terminal]
 # Executable used for new interactive panes.
