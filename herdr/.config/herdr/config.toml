@@ -19,24 +19,42 @@ auto_switch = false
 
 # Override individual color tokens on top of the base theme.
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
-# Nvim Dark (matches ghostty "Nvim Dark")
+# Matrix Rain (matches ghostty "Matrix Rain" / nvim "matrix")
 [theme.custom]
-panel_bg = "reset"        # inherit terminal bg/opacity (was #14161b NvimDarkGrey2)
+panel_bg = "reset"        # inherit terminal bg/opacity
 sidebar_bg = "reset"      # inherit terminal bg/opacity
-active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
-selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
-text = "#e0e2ea"          # NvimLightGrey2
-accent = "#8cf8f7"        # NvimLightCyan
-red = "#ffc0b9"
-green = "#b3f6c0"
-yellow = "#fce094"
-blue = "#a6dbff"
-mauve = "#ffcaff"
-peach = "#fce094"         # nvim has no orange; reuse yellow
-surface_dim = "#4f5258"
+active_row_bg = "#07140a" # CursorLine
+selection_bg = "#0f3d1c"  # Visual
+text = "#3fdc63"
+accent = "#00ff41"
+red = "#ff3b5c"
+green = "#00ff41"
+yellow = "#c6ff3e"
+blue = "#00c47a"
+mauve = "#8cffb4"
+peach = "#e0ff7a"
+surface_dim = "#134d22"
 # Agent status dots: working=yellow, blocked=red, done=teal, idle=green, unknown=overlay0
-teal = "#8cf8f7"          # NvimLightCyan
-overlay0 = "#9b9ea4"      # NvimLightGrey4
+teal = "#5effe0"
+overlay0 = "#2e8a48"
+
+# Nvim Dark (matches ghostty "Nvim Dark")
+# [theme.custom]
+# panel_bg = "reset"        # inherit terminal bg/opacity (was #14161b NvimDarkGrey2)
+# sidebar_bg = "reset"      # inherit terminal bg/opacity
+# active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
+# selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
+# text = "#e0e2ea"          # NvimLightGrey2
+# accent = "#8cf8f7"        # NvimLightCyan
+# red = "#ffc0b9"
+# green = "#b3f6c0"
+# yellow = "#fce094"
+# blue = "#a6dbff"
+# mauve = "#ffcaff"
+# peach = "#fce094"         # nvim has no orange; reuse yellow
+# surface_dim = "#4f5258"
+# teal = "#8cf8f7"          # NvimLightCyan
+# overlay0 = "#9b9ea4"      # NvimLightGrey4
 
 # Cyberdream
 # [theme.custom]

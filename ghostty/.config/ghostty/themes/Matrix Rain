@@ -1,0 +1,31 @@
+# Green phosphor on black. Follow the white rabbit.
+
+# Background and foreground
+background = #020803
+foreground = #3fdc63
+
+# Cursor colors
+cursor-color = #00ff41
+cursor-text = #020803
+
+# Selection colors
+selection-background = #0f3d1c
+selection-foreground = #c8ffd4
+
+# ANSI color palette (0-15)
+palette = 0=#020803
+palette = 1=#ff3b5c
+palette = 2=#00ff41
+palette = 3=#c6ff3e
+palette = 4=#00c47a
+palette = 5=#8cffb4
+palette = 6=#5effe0
+palette = 7=#9fe0ad
+palette = 8=#1e5c2e
+palette = 9=#ff6b7f
+palette = 10=#5cff7f
+palette = 11=#e0ff7a
+palette = 12=#3dffa8
+palette = 13=#c8ffd4
+palette = 14=#9effe9
+palette = 15=#e6ffe9
