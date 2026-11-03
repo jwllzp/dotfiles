@@ -72,7 +72,17 @@ local servers = {
 				analysis = {
 					autoSearchPaths = true,
 					diagnosticMode = "openFilesOnly",
-					exclude = { "**/*.ipynb" },
+					exclude = {
+						"**/*.ipynb",
+						"**/.venv",
+						"**/venv",
+						"**/__pycache__",
+						"**/build",
+						"**/dist",
+						"**/.git",
+						"**/fixtures",
+						"**/*.egg-info",
+					},
 					typeCheckingMode = "standard",
 				},
 			},
