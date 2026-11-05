@@ -14,5 +14,5 @@ require("plugins.telescope")
 require("plugins.treesitter")
 
 -- require("plugins.themes.cyberdream")
-require("plugins.themes.matrix")
+-- require("plugins.themes.catppuccin")
 require("highlights")

@@ -1,5 +1,5 @@
 adjust-cell-height = 10%
-background-opacity = 0.95
+background-opacity = 1
 clipboard-paste-protection = false
 copy-on-select = clipboard
 cursor-style = block
@@ -12,8 +12,7 @@ font-thicken = true
 macos-titlebar-style = hidden
 macos-window-shadow = false
 shell-integration-features = no-cursor
-# theme = Nvim Dark
-theme = Matrix Rain
+theme = Nvim Dark
 # window-height = 24
 window-padding-x = 10
 # window-width = 100
