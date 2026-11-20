@@ -1,11 +1,11 @@
 background = #16181a
-foreground = #ffffff
+foreground = #dddddd
 
-cursor-color = #ffffff
+cursor-color = #dddddd
 cursor-text = #16181a
 
 selection-background = #3c4048
-selection-foreground = #ffffff
+selection-foreground = #dddddd
 
 palette = 0=#16181a
 palette = 1=#ff6e5e
@@ -22,4 +22,4 @@ palette = 11=#f1ff5e
 palette = 12=#5ea1ff
 palette = 13=#bd5eff
 palette = 14=#5ef1ff
-palette = 15=#ffffff
+palette = 15=#dddddd

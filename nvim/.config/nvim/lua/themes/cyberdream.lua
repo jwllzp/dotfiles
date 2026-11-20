@@ -5,6 +5,7 @@ local variant = "muted"
 local c = require("cyberdream.colors")[variant]
 require("cyberdream").setup({
 	variant = variant,
+	saturation = 1,
 	transparent = true,
 	italic_comments = false,
 	hide_fillchars = false,
@@ -12,6 +13,9 @@ require("cyberdream").setup({
 	terminal_colors = true,
 	cache = true,
 	extensions = {},
+	colors = {
+		fg = "#dddddd",
+	},
 	highlights = {
 		Cursor = { reverse = true },
 		-- CursorLineNr = { fg = c.fg },
