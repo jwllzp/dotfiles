@@ -38,23 +38,41 @@ auto_switch = false
 # teal = "#5effe0"
 # overlay0 = "#2e8a48"
 
-# Nvim Dark (matches ghostty "Nvim Dark")
+# Cyberdream Mutted (matches nvim/ghostty muted cyberdream)
 [theme.custom]
-panel_bg = "reset"        # inherit terminal bg/opacity (was #14161b NvimDarkGrey2)
+panel_bg = "reset"        # inherit terminal bg/opacity (bg #16181a)
 sidebar_bg = "reset"      # inherit terminal bg/opacity
-active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
-selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
-text = "#e0e2ea"          # NvimLightGrey2
-accent = "#8cf8f7"        # NvimLightCyan
-red = "#ffc0b9"
-green = "#b3f6c0"
-yellow = "#fce094"
-blue = "#a6dbff"
-mauve = "#ffcaff"
-peach = "#fce094"         # nvim has no orange; reuse yellow
-surface_dim = "#4f5258"
-teal = "#8cf8f7"          # NvimLightCyan
-overlay0 = "#9b9ea4"      # NvimLightGrey4
+active_row_bg = "#1e2124" # bg_alt (CursorLine)
+selection_bg = "#3c4048"  # bg_highlight (Visual)
+text = "#dddddd"          # fg
+accent = "#7ed8e8"        # cyan
+red = "#e8796f"
+green = "#7ee088"
+yellow = "#e3c875"
+blue = "#78a8e8"
+mauve = "#b07ee8"         # purple
+peach = "#e3a875"         # orange
+surface_dim = "#3c4048"   # bg_highlight
+teal = "#7ed8e8"          # cyan
+overlay0 = "#7b8496"      # grey
+
+# Nvim Dark (matches ghostty "Nvim Dark")
+# [theme.custom]
+# panel_bg = "reset"        # inherit terminal bg/opacity (was #14161b NvimDarkGrey2)
+# sidebar_bg = "reset"      # inherit terminal bg/opacity
+# active_row_bg = "#2c2e33" # NvimDarkGrey3 (CursorLine)
+# selection_bg = "#4f5258"  # NvimDarkGrey4 (Visual)
+# text = "#e0e2ea"          # NvimLightGrey2
+# accent = "#8cf8f7"        # NvimLightCyan
+# red = "#ffc0b9"
+# green = "#b3f6c0"
+# yellow = "#fce094"
+# blue = "#a6dbff"
+# mauve = "#ffcaff"
+# peach = "#fce094"         # nvim has no orange; reuse yellow
+# surface_dim = "#4f5258"
+# teal = "#8cf8f7"          # NvimLightCyan
+# overlay0 = "#9b9ea4"      # NvimLightGrey4
 
 # Cyberdream
 # [theme.custom]
