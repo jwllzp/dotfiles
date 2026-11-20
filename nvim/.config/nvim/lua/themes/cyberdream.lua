@@ -1,10 +1,10 @@
 vim.pack.add({
 	"https://github.com/scottmckendry/cyberdream.nvim",
 })
-
-local c = require("cyberdream.colors").default
+local variant = "muted"
+local c = require("cyberdream.colors")[variant]
 require("cyberdream").setup({
-	variant = "default",
+	variant = variant,
 	transparent = true,
 	italic_comments = false,
 	hide_fillchars = false,
