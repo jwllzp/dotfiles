@@ -134,7 +134,7 @@ overlay0 = "#7b8496"      # grey
 # open_notification_target = "prefix+o"
 # workspace_picker = "prefix+w"
 # goto = "prefix+g"
-# new_workspace = "prefix+shift+n"
+new_workspace = ""
 # new_worktree = "prefix+shift+g"
 open_worktree = "prefix+O"    # optional, unset by default
 # remove_worktree = ""  # optional, unset by default; opens confirmation
@@ -185,6 +185,12 @@ navigate_workspace_down = "j"
 # key = "prefix+alt+g"
 # type = "pane"
 # command = "lazygit"
+
+# New workspace from a project under ~/projects (fzf picker).
+[[keys.command]]
+key = "prefix+shift+n"
+type = "pane"
+command = "sh ~/.config/herdr/scripts/project-workspace.sh"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
