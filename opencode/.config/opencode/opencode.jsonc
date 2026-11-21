@@ -19,13 +19,13 @@
         "baseURL": "http://127.0.0.1:8080/v1"
       },
       "models": {
-        "/Users/jwllz/projects/local_llms/models/google-gemma-4-26B": {
+        "{env:HOME}/projects/local_llms/models/google-gemma-4-26B": {
           "name": "Gemma 4 26B - MoE"
         },
-		"/Users/jwllz/projects/local_llms/models/google-gemma4-31B": {
+		"{env:HOME}/projects/local_llms/models/google-gemma4-31B": {
 			"name": "Gemma 4 31B - Dense"
 		},
-		"/Users/jwllz/projects/local_llms/models/qwen-3_8-27B": {
+		"{env:HOME}/projects/local_llms/models/qwen-3_8-27B": {
 			"name": "Qwen 3.8 27B"
 		}
       }
