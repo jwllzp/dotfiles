@@ -7,7 +7,7 @@ root=${HERDR_PROJECTS_DIR:-$HOME/projects}
 
 name=$(find "$root" -mindepth 1 -maxdepth 1 -type d ! -name '.*' -exec basename {} \; \
   | sort \
-  | fzf --prompt='project> ' --height=100% --reverse) || exit 0
+  | fzf --prompt='project> ' --height=100%) || exit 0
 
 [ -n "$name" ] || exit 0
 

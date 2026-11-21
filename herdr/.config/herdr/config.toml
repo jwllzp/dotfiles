@@ -188,7 +188,7 @@ navigate_workspace_down = "j"
 
 # New workspace from a project under ~/projects (fzf picker).
 [[keys.command]]
-key = "prefix+shift+n"
+key = "prefix+o"
 type = "pane"
 command = "sh ~/.config/herdr/scripts/project-workspace.sh"
 
