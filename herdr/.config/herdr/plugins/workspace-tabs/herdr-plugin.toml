@@ -1,0 +1,12 @@
+id = "local.workspace-tabs"
+name = "Workspace Tabs"
+version = "0.1.0"
+min_herdr_version = "0.9.3"
+description = "Seed every new workspace/worktree with claude, nvim, terminal tabs"
+platforms = ["macos", "linux"]
+
+# worktree.create also emits workspace.created, so one hook covers both.
+# POSIX sh + awk only; edit TABS at the top of setup.sh.
+[[events]]
+on = "workspace.created"
+command = ["sh", "setup.sh"]
