@@ -13,6 +13,6 @@ require("plugins.rainbow-delimiters")
 require("plugins.telescope")
 require("plugins.treesitter")
 
-require("themes.cyberdream")
+require("themes.silkcircuit")
 -- require("plugins.themes.catppuccin")
 require("highlights")

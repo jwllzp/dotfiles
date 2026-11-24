@@ -39,22 +39,22 @@ auto_switch = false
 # overlay0 = "#2e8a48"
 
 # Cyberdream Mutted (matches nvim/ghostty muted cyberdream)
-[theme.custom]
-panel_bg = "reset"        # inherit terminal bg/opacity (bg #16181a)
-sidebar_bg = "reset"      # inherit terminal bg/opacity
-active_row_bg = "#1e2124" # bg_alt (CursorLine)
-selection_bg = "#3c4048"  # bg_highlight (Visual)
-text = "#dddddd"          # fg
-accent = "#7ed8e8"        # cyan
-red = "#e8796f"
-green = "#7ee088"
-yellow = "#e3c875"
-blue = "#78a8e8"
-mauve = "#b07ee8"         # purple
-peach = "#e3a875"         # orange
-surface_dim = "#3c4048"   # bg_highlight
-teal = "#7ed8e8"          # cyan
-overlay0 = "#7b8496"      # grey
+# [theme.custom]
+# panel_bg = "reset"        # inherit terminal bg/opacity (bg #16181a)
+# sidebar_bg = "reset"      # inherit terminal bg/opacity
+# active_row_bg = "#1e2124" # bg_alt (CursorLine)
+# selection_bg = "#3c4048"  # bg_highlight (Visual)
+# text = "#dddddd"          # fg
+# accent = "#7ed8e8"        # cyan
+# red = "#e8796f"
+# green = "#7ee088"
+# yellow = "#e3c875"
+# blue = "#78a8e8"
+# mauve = "#b07ee8"         # purple
+# peach = "#e3a875"         # orange
+# surface_dim = "#3c4048"   # bg_highlight
+# teal = "#7ed8e8"          # cyan
+# overlay0 = "#7b8496"      # grey
 
 # Nvim Dark (matches ghostty "Nvim Dark")
 # [theme.custom]
@@ -89,6 +89,28 @@ overlay0 = "#7b8496"      # grey
 # mauve = "#bd5eff"
 # peach = "#ffbd5e"
 # surface_dim = "#3c4048"
+
+# Silkcircuit Neon
+[theme.custom]
+accent = "#e135ff"
+panel_bg = "#12101a"
+sidebar_bg = "#12101a"
+active_row_bg = "#221e32"
+selection_bg = "#44475a"
+surface0 = "#221e32"
+surface1 = "#44475a"
+surface_dim = "#39305c"
+overlay0 = "#768d8d"
+overlay1 = "#9580ff"
+text = "#f8f8f2"
+subtext0 = "#e9d5ff"
+mauve = "#ff00ff"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+red = "#ff6363"
+blue = "#82aaff"
+teal = "#80ffea"
+peach = "#ff6ac1"
 
 [terminal]
 # Executable used for new interactive panes.
@@ -241,7 +263,7 @@ confirm_close = false
 prompt_new_tab_name = false
 
 # Draw borders around split panes.
-pane_borders = false
+pane_borders = true
 
 # Keep split panes visually separated instead of sharing divider borders.
 pane_gaps = false
