@@ -264,6 +264,7 @@ prompt_new_tab_name = false
 
 # Draw borders around split panes.
 pane_borders = true
+pane_outer_borders = false
 
 # Keep split panes visually separated instead of sharing divider borders.
 pane_gaps = false
