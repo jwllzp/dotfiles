@@ -1,6 +1,6 @@
 #!/bin/sh
 # Pick a directory under ~/projects with fzf and open it as a new herdr workspace.
-# Bound to prefix+N via [[keys.command]] (type = "pane") in config.toml.
+# Bound to prefix+o via [[keys.command]] (type = "popup") in config.toml.
 set -eu
 
 root=${HERDR_PROJECTS_DIR:-$HOME/projects}

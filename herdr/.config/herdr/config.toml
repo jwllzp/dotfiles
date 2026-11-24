@@ -236,8 +236,11 @@ navigate_workspace_down = "j"
 # New workspace from a project under ~/projects (fzf picker).
 [[keys.command]]
 key = "prefix+o"
-type = "pane"
+type = "popup"
 command = "sh ~/.config/herdr/scripts/project-workspace.sh"
+description = "Open project"
+width = "60%"
+height = "60%"
 
 # Legacy indexed shortcut config is still parsed for compatibility.
 # Prefer switch_tab, switch_workspace, and focus_agent for new configs.
