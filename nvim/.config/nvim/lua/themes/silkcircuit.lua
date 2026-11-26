@@ -6,7 +6,7 @@ require("silkcircuit").setup({
 	transparent = true,
 	terminal_colors = true,
 	dim_inactive = false,
-	variant = "neon", -- "neon" | "vibrant" | "soft" | "glow" | "dawn"
+	variant = "vibrant", -- "neon" | "vibrant" | "soft" | "glow" | "dawn"
 
 	styles = {
 		comments = { italic = false },
