@@ -90,27 +90,49 @@ auto_switch = false
 # peach = "#ffbd5e"
 # surface_dim = "#3c4048"
 
-# Silkcircuit Neon
+# Xcode Darks (matches ghostty "XcodeDarks" / foot "xcode-darks")
 [theme.custom]
-accent = "#e135ff"
-panel_bg = "#12101a"
-sidebar_bg = "#12101a"
-active_row_bg = "#221e32"
-selection_bg = "#44475a"
-surface0 = "#221e32"
-surface1 = "#44475a"
-surface_dim = "#39305c"
-overlay0 = "#768d8d"
-overlay1 = "#9580ff"
-text = "#f8f8f2"
-subtext0 = "#e9d5ff"
-mauve = "#ff00ff"
-green = "#50fa7b"
-yellow = "#f1fa8c"
-red = "#ff6363"
-blue = "#82aaff"
-teal = "#80ffea"
-peach = "#ff6ac1"
+panel_bg = "reset"        # inherit terminal bg/opacity (bg #1f1f24)
+sidebar_bg = "reset"      # inherit terminal bg/opacity
+active_row_bg = "#23252b" # current line highlight
+selection_bg = "#515b70"  # selection
+surface0 = "#303239"      # markup bg
+surface1 = "#414249"      # markup border
+surface_dim = "#414249"
+text = "#dfdfe0"          # plain (85% white)
+subtext0 = "#92a1b1"      # doc comment keyword
+accent = "#fc5fa3"        # keyword
+red = "#fc6a5d"           # string
+green = "#67b7a4"         # function
+yellow = "#d0bf69"        # number
+blue = "#5482ff"          # url
+mauve = "#d0a8ff"         # system type
+peach = "#fd8f3f"         # preprocessor
+teal = "#9ef1dd"          # class
+overlay0 = "#6c7986"      # comment
+overlay1 = "#a167e6"      # system function
+
+# Silkcircuit Neon
+# [theme.custom]
+# accent = "#e135ff"
+# panel_bg = "#12101a"
+# sidebar_bg = "#12101a"
+# active_row_bg = "#221e32"
+# selection_bg = "#44475a"
+# surface0 = "#221e32"
+# surface1 = "#44475a"
+# surface_dim = "#39305c"
+# overlay0 = "#768d8d"
+# overlay1 = "#9580ff"
+# text = "#f8f8f2"
+# subtext0 = "#e9d5ff"
+# mauve = "#ff00ff"
+# green = "#50fa7b"
+# yellow = "#f1fa8c"
+# red = "#ff6363"
+# blue = "#82aaff"
+# teal = "#80ffea"
+# peach = "#ff6ac1"
 
 # Layer appearance-specific overrides on top when auto_switch is enabled.
 # [theme.custom.light]
