@@ -1,6 +1,7 @@
 adjust-cell-height = 10%
 background-opacity = 1
 clipboard-paste-protection = false
+confirm-close-surface = false
 copy-on-select = clipboard
 cursor-style = block
 cursor-style-blink = false
